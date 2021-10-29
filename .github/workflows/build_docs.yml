@@ -24,3 +24,9 @@ jobs:
         uses: ammaraskar/sphinx-action@35082eb35b69713fe335801c4d5846a4cc3c91ff
         with:
           docs-folder: "docs/"
+
+      - name: Deploy to github pages
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: docs/_build/html
