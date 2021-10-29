@@ -20,6 +20,10 @@ jobs:
       - name: Clone repo
         uses: actions/checkout@v2
 
+      - name: Install python packages
+        run: 
+          pip install sphinx-rtd-theme==0.5.2
+
       - name: Build Sphinx documentation
         uses: ammaraskar/sphinx-action@35082eb35b69713fe335801c4d5846a4cc3c91ff
         with:
