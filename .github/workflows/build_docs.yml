@@ -29,3 +29,11 @@ jobs:
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: docs/_build/html
+
+      - name: Upload pdf 
+      - uses: actions/upload-artifact@v1
+        with:
+          name: spidar-sdk
+          path: docs/_build/latex/*.pdf
+
+        
