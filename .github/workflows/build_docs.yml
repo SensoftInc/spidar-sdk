@@ -17,14 +17,11 @@ jobs:
       - name: Clone repo
         uses: actions/checkout@v2
 
-      - name: Install dependencies
-        run: 
-          sudo apt install latexmk
-
       - name: Build Sphinx documentation
-        uses: ammaraskar/sphinx-action@35082eb35b69713fe335801c4d5846a4cc3c91ff
+        uses: ax3l/sphinx-action@newer-sphinx
         with:
           docs-folder: "docs/"
+          pre-build-command: "apt-get update -y && apt-get install -y latexmk texlive-latex-recommended texlive-latex-extra texlive-fonts-recommended"
           build-command: "make latexpdf"
 
       - name: Deploy to github pages
