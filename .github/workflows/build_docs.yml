@@ -36,6 +36,6 @@ jobs:
         uses: actions/upload-artifact@v1
         with:
           name: spidar-sdk
-          path: /github/workspace/docs/_build/latex*.pdf
+          path: docs
 
         
