@@ -18,12 +18,17 @@ jobs:
       - name: Clone repo
         uses: actions/checkout@v2
 
-      - name: Build Sphinx documentation
+      - name: Build Sphinx documentation as a pdf
         uses: ax3l/sphinx-action@newer-sphinx
         with:
           docs-folder: "docs/"
           pre-build-command: "apt-get update -y && apt-get install -y latexmk texlive-latex-recommended texlive-latex-extra texlive-fonts-recommended"
           build-command: "make latexpdf"
+
+      - name: Build Sphinx documentation html
+        uses: ax3l/sphinx-action@newer-sphinx
+        with:
+          docs-folder: "docs/"
 
       - name: Deploy to github pages
         uses: peaceiris/actions-gh-pages@v3
