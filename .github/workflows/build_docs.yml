@@ -10,8 +10,9 @@ jobs:
 
   build:
 
+    name: Build sphinx documentation 
     runs-on: ubuntu-latest
-
+    
     steps:
           
       - name: Clone repo
@@ -24,16 +25,31 @@ jobs:
           pre-build-command: "apt-get update -y && apt-get install -y latexmk texlive-latex-recommended texlive-latex-extra texlive-fonts-recommended"
           build-command: "make latexpdf"
 
+  deploy:
+
+    name: Deploy documentation to gh-pages
+    runs-on: ubuntu-latest
+    needs: build
+
+    steps:
+      
       - name: Deploy to github pages
-        uses: peaceiris/actions-gh-pages@v3
-        with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: docs/_build/html
+            uses: peaceiris/actions-gh-pages@v3
+            with:
+              github_token: ${{ secrets.GITHUB_TOKEN }}
+              publish_dir: docs/_build/html
+  upload:
+
+    name: Upload pdf as an artifact
+    runs-on: ubuntu-latest
+    needs: build
+
+    steps:
 
       - name: Upload pdf 
         uses: actions/upload-artifact@v1
         with:
           name: spidar-sdk
-          path: docs/_build/latex/*.pdf
+          path: /github/workspace/docs/_build/latex*.pdf
 
         
