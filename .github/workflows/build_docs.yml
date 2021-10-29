@@ -21,6 +21,7 @@ jobs:
         uses: ammaraskar/sphinx-action@35082eb35b69713fe335801c4d5846a4cc3c91ff
         with:
           docs-folder: "docs/"
+          pre-build-command: "apt-get update -y && apt-get install -y latexmk texlive-latex-recommended texlive-latex-extra texlive-fonts-recommended"
           build-command: "make latexpdf"
 
       - name: Deploy to github pages
