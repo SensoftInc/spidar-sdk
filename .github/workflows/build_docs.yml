@@ -19,7 +19,7 @@ jobs:
 
       - name: Install dependencies
         run: 
-          apt install latexmk
+          sudo apt install latexmk
 
       - name: Build Sphinx documentation
         uses: ammaraskar/sphinx-action@35082eb35b69713fe335801c4d5846a4cc3c91ff
