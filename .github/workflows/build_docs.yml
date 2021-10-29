@@ -31,7 +31,7 @@ jobs:
           publish_dir: docs/_build/html
 
       - name: Upload pdf 
-      - uses: actions/upload-artifact@v1
+        uses: actions/upload-artifact@v1
         with:
           name: spidar-sdk
           path: docs/_build/latex/*.pdf
