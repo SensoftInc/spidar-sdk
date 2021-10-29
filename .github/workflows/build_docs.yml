@@ -1,12 +1,9 @@
-# Workflow to build documentation
+# Workflow to build and publish documentation
 
 name: Build documentation
 
-# Controls when the workflow will run
 on:
-  # Triggers the workflow on push request events 
   push:
-
   workflow_dispatch:
 
 jobs:
@@ -24,6 +21,7 @@ jobs:
         uses: ammaraskar/sphinx-action@35082eb35b69713fe335801c4d5846a4cc3c91ff
         with:
           docs-folder: "docs/"
+          build-command: "make latexpdf"
 
       - name: Deploy to github pages
         uses: peaceiris/actions-gh-pages@v3
