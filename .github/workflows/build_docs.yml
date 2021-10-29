@@ -10,7 +10,7 @@ jobs:
 
   build:
 
-    name: Build sphinx documentation 
+    name: Build and deploy docs
     runs-on: ubuntu-latest
     
     steps:
@@ -36,6 +36,6 @@ jobs:
         uses: actions/upload-artifact@v1
         with:
           name: spidar-sdk
-          path: docs
+          path: docs/_build/latex/spidar-sdk.pdf
 
         
