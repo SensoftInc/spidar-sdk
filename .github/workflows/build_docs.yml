@@ -18,17 +18,14 @@ jobs:
       - name: Clone repo
         uses: actions/checkout@v2
 
-      - name: Install dependencies
-        run: |
-          sudo apt-get update -y 
-          sudo apt-get install -y latexmk texlive-latex-recommended texlive-latex-extra texlive-fonts-recommended python3-sphinx
-
       - name: Build Sphinx documentation as a pdf
-        run : |
-          cd docs/
-          make latexpdf
+        uses: ax3l/sphinx-action@newer-sphinx
+        with:
+          docs-folder: "docs/"
+          pre-build-command: "apt-get update -y && apt-get install -y latexmk texlive-latex-recommended texlive-latex-extra texlive-fonts-recommended"
+          build-command: "make latexpdf"
 
-      - name: Build Sphinx documentation html
+      - name: Build Sphinx documentation into html
         uses: ax3l/sphinx-action@newer-sphinx
         with:
           docs-folder: "docs/"
@@ -38,7 +35,6 @@ jobs:
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: docs/_build/html
-
 
       - name: Upload pdf 
         uses: actions/upload-artifact@v1
