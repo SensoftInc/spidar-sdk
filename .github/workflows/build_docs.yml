@@ -19,14 +19,14 @@ jobs:
         uses: actions/checkout@v2
 
       - name: Build Sphinx documentation as a pdf
-        uses: ax3l/sphinx-action@newer-sphinx
+        uses: ax3l/sphinx-action@31d7bf8fecdb2ef0315d87487bf6b2ab17869b4a
         with:
           docs-folder: "docs/"
           pre-build-command: "apt-get update -y && apt-get install -y latexmk texlive-latex-recommended texlive-latex-extra texlive-fonts-recommended"
           build-command: "make latexpdf"
 
       - name: Build Sphinx documentation into html
-        uses: ax3l/sphinx-action@newer-sphinx
+        uses: ammaraskar/sphinx-action@35082eb35b69713fe335801c4d5846a4cc3c91ff
         with:
           docs-folder: "docs/"
 
