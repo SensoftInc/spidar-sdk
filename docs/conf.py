@@ -18,8 +18,8 @@
 # -- Project information -----------------------------------------------------
 
 project = 'spidar-sdk'
-copyright = '2021, Sensor & Software'
-author = 'Sensor & Software'
+copyright = 'Sensors & Software Inc'
+author = 'Sensors & Software Inc'
 
 
 # -- General configuration ---------------------------------------------------
