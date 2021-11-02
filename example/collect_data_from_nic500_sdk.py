@@ -10,7 +10,7 @@ This sample script demonstrates how to collect data from a NIC500.
 
 The script performs the following steps:
 
-1. Get the OEM version information and confirm the NIC-500 is in OEM mode
+1. Get the SDK version information and confirm the NIC-500 is in SDK mode
 2. Read system information from the NIC and print it to console.
 3. Power on the GPR.
 4. Read system information from the GPR and print it to console.
@@ -38,7 +38,7 @@ The script performs the following steps:
 # NIC500 IP address
 IP_ADDRESS = '192.168.20.221'
 
-# Commands to communication with OEM
+# Commands to communication with SDK
 API_URL = "http://" + IP_ADDRESS + ":8080/api"
 NIC_SYSTEM_INFO_CMD = API_URL + "/nic/system_information"
 GPR_SYSTEM_INFO_CMD = API_URL + "/nic/gpr/system_information"
@@ -114,12 +114,12 @@ def put_requests(command, data, command_str_name):
     return json_response
 
 
-# Use the API command to confirm we are in OEM Mode
+# Use the API command to confirm we are in SDK Mode
 api_response = get_requests(API_URL, "API")
-if api_response is None or not api_response['data']['name'] == "NIC-500 OEM":
-    print("Not in NIC OEM Mode")
+if api_response is None or not api_response['data']['name'] == "NIC-500 SDK":
+    print("Not in NIC SDK Mode")
     quit()
-print("In NIC OEM Mode!")
+print("In NIC SDK Mode!")
 
 # Use the NIC system_information command to get the system information
 nic_system_information_response = get_requests(NIC_SYSTEM_INFO_CMD, "NIC's System Information")
