@@ -53,5 +53,8 @@ Sample response data
 
    {
    "data": {
-    "port": 60039,
+    "data_socket": {
+     "port": 60039
+     }
+    }
    }
