@@ -1,5 +1,5 @@
-Power State
-###########
+Power
+#####
 
 This resource allows the client to get or set the power state devices connected to the NIC. When the NIC is booted,
 connected devices such as the GPR will remain off until requested to turn on. Once the GPR is turned on, it cannot be
@@ -17,8 +17,8 @@ turned off except to power down the NIC.
      - * GET: Read the power state of all connected devices.
        * PUT: Set the power state of all devices including the NIC.
 
-Power State Attributes
-**********************
+Power Attributes
+****************
 
 .. list-table::
    :widths: 25 25 50
@@ -76,6 +76,7 @@ Sample response
    {
    "data": {
     "state": 2
+    }
    }
 
 Errors
