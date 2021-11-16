@@ -40,6 +40,6 @@ jobs:
         uses: actions/upload-artifact@v1
         with:
           name: spidar-sdk
-          path: docs/_build/latex/spidar-sdk.pdf
+          path: docs/_build/latex/spidarsdk.pdf
 
         
