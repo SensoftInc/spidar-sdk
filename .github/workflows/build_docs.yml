@@ -41,5 +41,16 @@ jobs:
         with:
           name: spidar-sdk
           path: docs/_build/latex/spidarsdk.pdf
+       
+       # TODO: don't forget remove this when merging to main
+      - name: Copy artifact to the Q drive.
+        uses: benc-uk/workflow-dispatch@v1	
+        with:	
+         workflow: Copy to Q Drive
+         repo: SensoftInc/build_utilities	
+         token: ${{ secrets.TRACEY_CONTAINER_TOKEN }}	
+         ref: master
+         inputs: '{ "WORKFLOW_FILE_NAME": "build_docs.yml" , "Q_DRIVE_PATH": "/q/Depts/R&D/Active Projects/F0008 SPIDAR SDK NPI/docs_pdf" , "PACKAGE_REPO_NAME" : "SensoftInc/spidar-sdk" , "NAME_OF_ARTIFACT": "spidar-sdk"}' 
+
 
         
