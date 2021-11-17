@@ -185,17 +185,19 @@ Value out of range
 (Status Code: 0008)
 
 This status code is returned for any of the following reasons:
-    - One or more parameters are out of the defined range
-    - An input parameter is outside the allowed range of values
-    - The input combination of points_per_trace and time_sampling_interval_ps result in a time_window outside the allowed range
+
+    - One or more parameters are out of the defined range.
+    - An input parameter is outside the allowed range of values.
+    - The input combination of points_per_trace and time_sampling_interval_ps result in a time_window outside the allowed range.
 
 Invalid Input Parameter Format
 ------------------------------
 (Status Code: 0011)
 
 This status code is returned for any of the following reasons:
-    - When the input parameter is not in a JSON readable format
-    - When either the input timer or the gpr doesn't contain a "parameters" key
+
+    - When the input parameter is not in a JSON readable format.
+    - When either the input timer or the gpr doesn't contain a "parameters" key.
 
 GPR Not Powered
 ---------------

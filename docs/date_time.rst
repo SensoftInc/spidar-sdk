@@ -118,10 +118,10 @@ Value out of range
 (Status Code: 0008)
 
 This status code is returned for any of the following reasons:
-    - The date may not be set earlier than 2017-01-01. A VALUE_OUT_OF_RANGE error will be returned if the year or a
-    combination of year and offset are set less than 2017.
-    - If any of the fields are out of their normal range, a VALUE_OUT_OF_RANGE error will be returned. For example, if
-    the requested month 15, or hour is 28.
+
+    - The date may not be set earlier than 2017-01-01. A VALUE_OUT_OF_RANGE error will be returned if the year or a combination of year and offset are set less than 2017.
+    - If any of the fields are out of their normal range, a VALUE_OUT_OF_RANGE error will be returned. For example, if the requested month 15, or hour is 28.
+
 
 Invalid Parameter Format
 ------------------------

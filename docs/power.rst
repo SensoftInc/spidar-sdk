@@ -92,8 +92,9 @@ GPR Not Powered
 (Status Code: 4001)
 
 This status code is returned for any of the following reasons:
-    - The connected GPR device is not powered on
-    - The specified GPR device is not connected
+
+    - The connected GPR device is not powered on.
+    - The specified GPR device is not connected.
 
 
 GPR Type Not Supported
