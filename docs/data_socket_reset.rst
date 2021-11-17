@@ -25,15 +25,16 @@ Reset the Data Socket Port
 Sample request
 --------------
 
+
 .. tabs::
+  
+   .. code-tab:: python
 
-  .. group-tab::python
+      response = requests.put("http://192.168.20.221:8080/api/nic/gpr/data_socket_reset", data={"data": {}})
 
-    response = requests.put("http://192.168.20.221:8080/api/nic/gpr/data_socket_reset", data={"data": {}})
+   .. code-tab:: console
 
-  .. group-tab::console curl
-
-    curl -X PUT --data-urlencode "data={}" http://192.168.20.221:8080/api/nic/gpr/data_socket
+      curl -X PUT --data-urlencode "data={}" http://192.168.20.221:8080/api/nic/gpr/data_socket
 
 Sample response data
 --------------------

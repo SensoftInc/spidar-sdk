@@ -60,14 +60,14 @@ Sample request
 --------------
 
 .. tabs::
+  
+   .. code-tab:: python
 
-  .. group-tab::python
+      response = requests.get("http://192.168.20.221:8080/api/nic/setup")
 
-    response = requests.get("http://192.168.20.221:8080/api/nic/setup")
+   .. code-tab:: console curl
 
-  .. group-tab::console curl
-
-    curl http://192.168.20.221:8080/api/nic/setup
+      curl http://192.168.20.221:8080/api/nic/setup
 
 Sample response data
 --------------------
@@ -99,16 +99,18 @@ Change the setup
 Sample request
 --------------
 
+
 .. tabs::
+  
+   .. code-tab:: python
 
-  .. group-tab:: python
+      configuration = json.dumps({"gpr": {"parameters": {"points_per_trace": 200, "point_stacks": 32}}, "timer": {"parameters": {"period_s": 0.1}}})
+      response = requests.put("http://192.168.20.221:8080/api/smc/setup", data={"data": configuration})
 
-    configuration = json.dumps({"gpr": {"parameters": {"points_per_trace": 200, "point_stacks": 32}}, "timer": {"parameters": {"period_s": 0.1}}})
-    response = requests.put("http://192.168.20.221:8080/api/smc/setup", data={"data": configuration})
 
-  .. group-tab:: console curl
+   .. code-tab:: console curl
 
-    curl -X PUT --data-urlencode "data={\"gpr\": {\"point_stacks\": 2048}}" http://192.168.20.221:8080/api/smc/setup
+      curl -X PUT --data-urlencode "data={\"gpr\": {\"point_stacks\": 2048}}" http://192.168.20.221:8080/api/smc/setup
 
 Sample response
 ---------------

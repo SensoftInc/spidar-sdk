@@ -39,11 +39,11 @@ Sample request
 
 .. tabs::
 
-  .. group-tab::python
+  .. code-tab:: python
 
     response = requests.get("http://192.168.20.221:8080/api/nic/power")
 
-  .. group-tab::console curl
+  .. code-tab:: console curl
 
     curl http://192.168.20.221:8080/api/nic/power
 
