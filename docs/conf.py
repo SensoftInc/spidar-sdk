@@ -52,3 +52,7 @@ html_theme = 'sphinx_rtd_theme'
 # so a file named "default.css" will overwrite the builtin "default.css".
 html_static_path = []
 html_show_copyright = True
+
+# Add extensions 
+extensions = ['sphinx_tabs.tabs']
+sphinx_tabs_valid_builders = ['linkcheck']

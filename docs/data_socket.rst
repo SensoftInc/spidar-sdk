@@ -34,17 +34,15 @@ Read the Data Socket Port
 Sample request
 --------------
 
-**Python**
+.. tabs::
 
-.. code-block:: python
+  .. group-tab::python
 
-    response = requests.get("http://192.168.20.221:8080/api/nic/gpr/data_socket")
+      response = requests.get("http://192.168.20.221:8080/api/nic/gpr/data_socket")
 
-**curl**
+  .. group-tab::console curl
 
-.. code-block:: console
-
-    curl http://192.168.20.221:8080/api/nic/gpr/data_socket
+      curl http://192.168.20.221:8080/api/nic/gpr/data_socket
 
 Sample response data
 --------------------

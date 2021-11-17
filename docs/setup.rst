@@ -59,11 +59,13 @@ Read the setup
 Sample request
 --------------
 
-.. code-block:: python
+.. tabs::
+
+  .. group-tab::python
 
     response = requests.get("http://192.168.20.221:8080/api/nic/setup")
 
-.. code-block:: console
+  .. group-tab::console curl
 
     curl http://192.168.20.221:8080/api/nic/setup
 
@@ -97,14 +99,14 @@ Change the setup
 Sample request
 --------------
 
-**Python**
+.. tabs::
 
-.. code-block:: python
+  .. group-tab:: python
 
     configuration = json.dumps({"gpr": {"parameters": {"points_per_trace": 200, "point_stacks": 32}}, "timer": {"parameters": {"period_s": 0.1}}})
     response = requests.put("http://192.168.20.221:8080/api/smc/setup", data={"data": configuration})
 
-.. code-block:: console
+  .. group-tab:: console curl
 
     curl -X PUT --data-urlencode "data={\"gpr\": {\"point_stacks\": 2048}}" http://192.168.20.221:8080/api/smc/setup
 
@@ -137,7 +139,7 @@ GPR Parameter Ranges
 *********************
 
 .. list-table::
-   :widths: 45 20 20 20 100
+   :widths: 60 25 30 25 100
    :header-rows: 1
 
    * - Parameter

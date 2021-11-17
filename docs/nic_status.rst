@@ -52,15 +52,13 @@ Read the NIC system information
 Sample request
 --------------
 
-**Python**
+.. tabs::
 
-.. code-block:: python
+  .. group-tab::python
 
     response = requests.get("http://192.168.20.221:8080/api/nic/status")
 
-**curl**
-
-.. code-block:: console
+  .. group-tab::console curl
 
     curl http://192.168.20.221:8080/api/nic/status
 

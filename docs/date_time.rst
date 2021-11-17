@@ -56,14 +56,15 @@ Read the date and time
 
 Sample request
 --------------
+.. tabs::
 
-.. code-block:: python
+  .. group-tab::python
 
-    response = requests.get("http://192.168.20.221:8080/api/nic/date_time")
+      response = requests.get("http://192.168.20.221:8080/api/nic/date_time")
 
-.. code-block:: console
+  .. group-tab::console curl
 
-    curl http://192.168.20.221:8080/api/nic/date_time
+      curl http://192.168.20.221:8080/api/nic/date_time
 
 Sample response data
 --------------------

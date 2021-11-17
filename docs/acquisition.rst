@@ -35,13 +35,15 @@ Read the acquisition state
 Sample request
 --------------
 
-.. code-block:: python
+.. tabs::
 
-    response = requests.get("http://192.168.20.221:8080/api/nic/acquisition")
+  .. group-tab::python
 
-.. code-block:: console
+      response = requests.get("http://192.168.20.221:8080/api/nic/acquisition")
 
-    curl http://192.168.20.221:8080/api/nic/acquisition
+  .. group-tab::console curl
+
+      curl http://192.168.20.221:8080/api/nic/acquisition
 
 Sample response data
 --------------------
