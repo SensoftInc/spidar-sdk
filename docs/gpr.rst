@@ -16,3 +16,4 @@ This resource retrieves a list of available resources from the NIC.
 
    gpr_system_info
    data_socket
+   data_socket_reset
