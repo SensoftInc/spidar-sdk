@@ -92,13 +92,13 @@ GPR Not Running
 Returned when the connected GPR device is not running and a stop or pause state is input
 
 GPR Already Running
----------------
+-------------------
 (Status Code: 4004)
 
 Returned when the connected GPR device is already running and a start state is input
 
 GPR Not Initialized
----------------
+-------------------
 (Status Code: 4005)
 
 Returned when a start state is input, but the connected GPR device has not been initialized with the setup command first

@@ -137,7 +137,7 @@ GPR Parameter Ranges
 *********************
 
 .. list-table::
-   :widths: 20 10 10 10 50
+   :widths: 45 20 20 20 100
    :header-rows: 1
 
    * - Parameter

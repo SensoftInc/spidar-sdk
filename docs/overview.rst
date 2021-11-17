@@ -14,7 +14,7 @@ The GPR data are sent in traces, each trace contains a header with information a
 with the amplitude information received by the GPR.
 
 .. list-table::
-   :widths: 20 20 60
+   :widths: 20 30 60
    :header-rows: 1
 
    * - Field
