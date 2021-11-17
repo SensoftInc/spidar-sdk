@@ -32,7 +32,7 @@ Sample request
 
       response = requests.put("http://192.168.20.221:8080/api/nic/gpr/data_socket_reset", data={"data": {}})
 
-   .. code-tab:: console
+   .. code-tab:: curl
 
       curl -X PUT --data-urlencode "data={}" http://192.168.20.221:8080/api/nic/gpr/data_socket
 
