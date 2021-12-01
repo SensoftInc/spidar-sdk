@@ -4,7 +4,7 @@
 ## Requirements 
 
 * Python2.7 or Python3.8 install and added to your path. For more details on how to add python to your path use the following [link](https://datascience.com.co/how-to-install-python-2-7-and-3-6-in-windows-10-add-python-path-281e7eae62a). 
-* NIC-500 with sdk.  
+* NIC-500 with SDK.  
 * Git must be included on your system. Follow this link to download [Git](https://git-scm.com/downloads). When installing Git make sure it's installed on your Windows Command Prompt. 
 
 ## Setup 
@@ -68,13 +68,15 @@ Commands works for python 2.7 or 3.8. If you have both you need to modify the na
 
 ## Usage 
 
-To run the collection script use the following command. 
+Example scripts of ruunning SPIDAR SDK are available in the [example](example/) subfolder.
+
+To run the [collection](example/collect_data_from_nic500_sdk.py) script navigate into the example directory and use the following command. 
 
 ```python collect_data_from_nic500_sdk.py```
 
 
-To run the scoping script use the following command. 
+To run the [reset data socket](example/reset_data_socket_during_collection_sdk.py) script navigate into the example directory and use the following command. 
 
-```python scope_nic500_sdk.py```
+```python reset_data_socket_during_collection_sdk.py```
 
 Each script will output what commands it ran. For more details on what the script does refer to the python file.
