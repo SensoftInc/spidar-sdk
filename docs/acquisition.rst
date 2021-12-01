@@ -27,8 +27,17 @@ Acquisition State Attributes
      - Description
    * - state
      - Integer
-     - 0, 1, 2 state requested for the NIC that are corresponding to stop, running and paused.
-
+     - 
+   * - 
+     - 0
+     - Stop data acquisition.
+   * - 
+     - 1
+     - Start data acqisition.  
+   * -
+     - 2
+     - Pause data acquisition.
+  
 Read the acquisition state
 **************************
 

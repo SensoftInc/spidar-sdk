@@ -1,2 +1,4 @@
 # VSCode
 .vscode/
+# Sphinx Build Files
+docs/_build

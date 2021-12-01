@@ -29,7 +29,16 @@ Power State Attributes
      - Description
    * - state
      - Integer
-     - 0 = All devices including NIC turned off. 1 = NIC is on but all connected devices are off. 2 = NIC and all connected devices are turned on.
+     - 
+   * -  
+     - 0 
+     - All devices including NIC turned off.
+   * - 
+     - 1 
+     - NIC is on but all connected devices are off. 
+   * - 
+     - 2
+     - NIC and all connected devices are turned on.
 
 Read the power state
 ********************
@@ -95,8 +104,8 @@ GPR Not Powered
 
 This status code is returned for any of the following reasons:
 
-    - The connected GPR device is not powered on.
-    - The specified GPR device is not connected.
+- The connected GPR device is not powered on.
+- The specified GPR device is not connected.
 
 
 GPR Type Not Supported
