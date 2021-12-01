@@ -7,7 +7,7 @@ import numpy as np
 import time
 
 """
-This sample script demonstrates how to collect data from a NIC500.
+This sample script demonstrates how to reset data socket during collection from a NIC500.
 
 The script performs the following steps:
 

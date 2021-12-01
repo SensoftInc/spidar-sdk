@@ -51,7 +51,7 @@ Commands works for python 2.7 or 3.8. If you have both you need to modify the na
 
     ``` cd workspace```
 
-    ```git clone git@github.com:SensoftInc/smc_server.git```
+    ```git clone git@github.com:SensoftInc/spidar-sdk.git```
 
 7. Navigate into the sample scrip directory 
 
@@ -70,13 +70,28 @@ Commands works for python 2.7 or 3.8. If you have both you need to modify the na
 
 Example scripts of ruunning SPIDAR SDK are available in the [example](example/) subfolder.
 
+### Collection
+
+This sample script demonstrates how to collect data from a NIC500.
+
 To run the [collection](example/collect_data_from_nic500_sdk.py) script navigate into the example directory and use the following command. 
 
 ```python collect_data_from_nic500_sdk.py```
 
+### Data Socket Reset 
+
+This sample script demonstrates how to run reset data socket command during collection. An example use case of this command is when Ethernet cable disconnects from the NIC500 and Computer.  
 
 To run the [reset data socket](example/reset_data_socket_during_collection_sdk.py) script navigate into the example directory and use the following command. 
 
 ```python reset_data_socket_during_collection_sdk.py```
 
 Each script will output what commands it ran. For more details on what the script does refer to the python file.
+
+## Copyright and License
+
+```
+Copyright 2021 Sensors and Software Inc. All rights reserved.
+
+TODO: Add Software License 
+```
