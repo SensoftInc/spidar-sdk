@@ -1,17 +1,14 @@
-Overview
-########
-
-SPIDAR-OEM is a system which allows users to control data acquisition, and retrieve data from a NIC-500 based system
-in real time using an Application Programming Interface (API). The API is accessed by simple HTTP endpoints,
-employing GET and PUT methods to retrieve and set data.
-
-The GPR data is pushed across a separate network socket that the client connects to.
-
-Data format
-===========
+***************
+GPR Data Format
+***************
 
 The GPR data are sent in traces, each trace contains a header with information about the trace, and a data portion
-with the amplitude information received by the GPR.
+with the amplitude information received by the GPR. Data transmitted across the network is broken up to optimize
+transfer speeds, and may not always be whole traces. When reading data from the socket, the client must know the
+expected size of traces in bytes to ensure all the data is read.
+
+Field list
+==========
 
 .. list-table::
    :widths: 20 30 60

@@ -1,7 +1,8 @@
+#############
 GPR Resources
 #############
 
-This resource retrieves a list of available resources from the NIC.
+This resource retrieves a list of available resources from the GPR.
 
 .. list-table::
    :widths: 25 75
@@ -10,10 +11,13 @@ This resource retrieves a list of available resources from the NIC.
    * - Resource
      - api/nic/gpr
    * - Returns
-     - List of sub resources
+     - List of resources associated with the GPR
+
 
 .. toctree::
+   :maxdepth: 1
 
    gpr_system_info
    data_socket
    data_socket_reset
+   gpr_data_format
