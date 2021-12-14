@@ -4,6 +4,10 @@ name: Build and deploy spidar-sdk documentation
 
 on:
   push:
+    branches:
+      - main
+      - devtesting
+
   workflow_dispatch:
 
 jobs:
