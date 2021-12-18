@@ -1,5 +1,5 @@
-Resources
-#########
+NIC Resources
+#############
 
 This resource retrieves a list of available resources from the NIC.
 
@@ -12,7 +12,7 @@ This resource retrieves a list of available resources from the NIC.
    * - Returns
      - List of sub resources
    * - Supported methods
-     - * GET: Read the version and serial number information from the NIC
+     - * GET: Retrieve a list of devices and resources
 
 .. toctree::
 
