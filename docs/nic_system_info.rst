@@ -1,5 +1,6 @@
+******************
 System Information
-##################
+******************
 
 This resource allows the client to get system information including component versions and serial numbers from the NIC.
 
@@ -35,7 +36,7 @@ Attributes
      - DIP number of the application.
    * - kernel_version
      - String
-     - Version of the installed kernal.
+     - Version of the installed kernel.
    * - hardware_id
      - String
      - Unique identifier of the NIC hardware.
