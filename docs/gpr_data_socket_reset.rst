@@ -1,5 +1,6 @@
+*****************
 Data Socket Reset
-#################
+*****************
 
 This resource sends a command to the server to reset data socket when there is a network connection failure.
 
@@ -14,17 +15,16 @@ This resource sends a command to the server to reset data socket when there is a
    * - Supported methods
      - * PUT: Reset data socket
 
-Data Socket Reset Attributes
-****************************
+Attributes
+==========
 
 N/A
 
 Reset the Data Socket Port
-**************************
+==========================
 
 Sample request
 --------------
-
 
 .. tabs::
   

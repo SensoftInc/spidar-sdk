@@ -1,5 +1,6 @@
+***********
 Data Socket
-###########
+***********
 
 This resource retrieves the port number to connect for data streaming.
 
@@ -14,8 +15,8 @@ This resource retrieves the port number to connect for data streaming.
    * - Supported methods
      - * GET: Read the data socket port number
 
-Data Socket Attributes
-**********************
+Attributes
+==========
 
 .. list-table::
    :widths: 25 25 50
@@ -29,11 +30,10 @@ Data Socket Attributes
      - Port identifier for data socket.
 
 Read the Data Socket Port
-*************************
+=========================
 
 Sample request
 --------------
-
 
 .. tabs::
   

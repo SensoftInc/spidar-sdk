@@ -13,7 +13,7 @@ This resource allows the client to get system information including component ve
    * - Returns
      - system information structure
    * - Supported methods
-     - * GET: Read the version and serial number information from the GPR and antennas
+     - * GET: Read the version and serial number information from the GPR and antennas.
 
 Attributes
 ==========
