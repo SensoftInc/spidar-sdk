@@ -48,7 +48,7 @@ Attributes
      - Amount of RAM used as a percentage of the total available
 
 Read the NIC device status
-**************************
+==========================
 
 Sample request
 --------------
