@@ -20,24 +20,26 @@ Attributes
 ==========
 
 .. list-table::
-   :widths: 25 25 50
+   :widths: 20 20 10 50
    :header-rows: 1
 
    * - Field
      - Type
+     - Option
      - Description
    * - state
      - Integer
-     - 
-   * - 
      - 0
-     - Stop data acquisition.
-   * - 
-     - 1
-     - Start data acqisition.  
+     - Stop data acquisition and reset the trace numbering.
    * -
+     -
+     - 1
+     - Start data acquisition.
+   * - 
+     -
      - 2
-     - Pause data acquisition.
+     - Pause data acquisition, does not reset trace number. Start acquisition again to resume.
+
   
 Read the acquisition state
 ==========================

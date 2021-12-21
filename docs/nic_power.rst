@@ -22,22 +22,23 @@ Attributes
 ==========
 
 .. list-table::
-   :widths: 25 25 50
+   :widths: 20 20 10 50
    :header-rows: 1
 
    * - Field
      - Type
+     - Option
      - Description
    * - state
      - Integer
-     - 
-   * -  
-     - 0 
+     - 0
      - All devices including NIC turned off.
-   * - 
-     - 1 
-     - NIC is on but all connected devices are off. 
-   * - 
+   * -
+     -
+     - 1
+     - NIC is on but all connected devices are off.
+   * -
+     -
      - 2
      - NIC and all connected devices are turned on.
 
