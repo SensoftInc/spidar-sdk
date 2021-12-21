@@ -195,7 +195,7 @@ This status code is returned for any of the following reasons:
     - One or more parameters are out of the defined range.
     - An input parameter is outside the allowed range of values.
     - The input combination of points_per_trace and time_sampling_interval_ps result in a time_window outside the
-allowed range.
+      allowed range.
 
 Invalid Input Parameter Format
 ------------------------------
