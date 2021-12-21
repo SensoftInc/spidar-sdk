@@ -21,7 +21,7 @@ Resources
 .. toctree::
    :maxdepth: 1
 
-   date_time
+   nic_date_time
    nic_system_info
    nic_status
    nic_power
