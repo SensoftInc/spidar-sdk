@@ -16,16 +16,6 @@ An action performed on a resource. SPIDAR SDK supports GET and PUT type requests
 data from a resource. PUT request are used to change the resource's data. Not all resources support both types
 of requests, please see the resource documentation for more information.
 
-Uniform Resource Identifier (URI)
-=================================
-
-Name of physical or logical resource accessible through the API.
-
-Uniform Resource Locator (URL)
-==============================
-
-Address of a URI including the protocol identifier. For example, "http://192.168.20.221:8080/api/nic" is the
-URL, "nic" is the URI.
 
 Response
 ========
@@ -139,3 +129,14 @@ Sample ERROR status
             "title": "CommandNotSupported"
         }
     }
+
+Uniform Resource Identifier (URI)
+=================================
+
+Name of physical or logical resource accessible through the API.
+
+Uniform Resource Locator (URL)
+==============================
+
+Address of a URI including the protocol identifier. For example, "http://192.168.20.221:8080/api/nic" is the
+URL, "nic" is the URI.

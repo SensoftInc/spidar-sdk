@@ -1,5 +1,5 @@
-NIC Resources
-#############
+NIC
+###
 
 This resource retrieves a list of available resources from the NIC.
 
@@ -14,7 +14,11 @@ This resource retrieves a list of available resources from the NIC.
    * - Supported methods
      - * GET: Retrieve a list of devices and resources
 
+Resources
+=========
+
 .. toctree::
+   :maxdepth: 1
 
    date_time
    nic_system_info
@@ -22,3 +26,4 @@ This resource retrieves a list of available resources from the NIC.
    power
    setup
    acquisition
+   gpr
