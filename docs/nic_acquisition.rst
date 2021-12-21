@@ -1,5 +1,6 @@
+***********
 Acquisition
-###########
+***********
 
 This resource allows the client to get or set the acquisition state devices connected to the NIC.
 
@@ -15,8 +16,8 @@ This resource allows the client to get or set the acquisition state devices conn
      - * GET: Read the acquisition state.
        * PUT: Set the acquisition state.
 
-Acquisition State Attributes
-****************************
+Attributes
+==========
 
 .. list-table::
    :widths: 25 25 50
@@ -39,7 +40,7 @@ Acquisition State Attributes
      - Pause data acquisition.
   
 Read the acquisition state
-**************************
+==========================
 
 Sample request
 --------------
@@ -65,7 +66,7 @@ Sample response data
    }
 
 Start data acquisition
-**********************
+======================
 
 Sample request
 --------------
@@ -88,7 +89,7 @@ Sample response
    }
 
 Errors
-******
+======
 
 GPR Not Powered
 ---------------
@@ -118,12 +119,6 @@ Invalid Parameter Format
 ------------------------
 (Status Code: 0011)
 
-An INVALID_PARAMETER_FORMAT error is returned if any of the input parameters have a type mismatch from the expected format
+An INVALID_PARAMETER_FORMAT error is returned if any of the input parameters have a type mismatch from the expected
+format
 
-Warnings
-********
-
-No transmitter detected
------------------------
-
-No transmitter was detected on power up.

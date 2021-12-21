@@ -26,5 +26,5 @@ Resources
    nic_status
    nic_power
    setup
-   acquisition
+   nic_acquisition
    gpr
