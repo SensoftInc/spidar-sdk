@@ -1,5 +1,6 @@
+*************
 Date and Time
-#############
+*************
 
 This resource allows the client to get or set the current date and time on the NIC. Time is stored
 without a timezone offset.
@@ -16,8 +17,8 @@ without a timezone offset.
      - * GET: Read the current date and time from the NIC
        * PUT: Set the date and/or time on the NIC
 
-Date/Time Attributes
-********************
+Attributes
+==========
 
 .. list-table::
    :widths: 25 25 50
@@ -52,7 +53,7 @@ Date/Time Attributes
      - Timezone offset in the format +/-HHMM
 
 Read the date and time
-**********************
+======================
 
 Sample request
 --------------
@@ -84,7 +85,7 @@ Sample response data
    }
 
 Set the date and time
-*********************
+=====================
 
 Sample request
 --------------
@@ -113,7 +114,7 @@ Sample response
    }
 
 Errors
-******
+======
 
 Value out of range
 ------------------
@@ -124,8 +125,7 @@ This status code is returned for any of the following reasons:
 - The date may not be set earlier than 2017-01-01. A VALUE_OUT_OF_RANGE error will be returned if the year or a combination of year and offset are set less than 2017.
 - If any of the fields are out of their normal range, a VALUE_OUT_OF_RANGE error will be returned. For example, if the requested month 15, or hour is 28.
 
-
-Invalid Parameter Format
+Invalid parameter format
 ------------------------
 (Status Code: 0011)
 

@@ -1,5 +1,6 @@
+***
 NIC
-###
+***
 
 This resource retrieves a list of available resources from the NIC.
 
