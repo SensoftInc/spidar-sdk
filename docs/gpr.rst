@@ -1,5 +1,6 @@
+***
 GPR
-###
+***
 
 This resource retrieves a list of available resources from the GPR.
 
@@ -10,13 +11,15 @@ This resource retrieves a list of available resources from the GPR.
    * - Resource
      - api/nic/gpr
    * - Returns
-     - List of resources associated with the GPR
+     - List of resources associated with the GPR.
 
+Resources
+=========
 
 .. toctree::
    :maxdepth: 1
 
    gpr_system_info
-   data_socket
-   data_socket_reset
+   gpr_data_socket
+   gpr_data_socket_reset
    gpr_data_format
