@@ -24,7 +24,7 @@ Resources
    date_time
    nic_system_info
    nic_status
-   power
+   nic_power
    setup
    acquisition
    gpr
