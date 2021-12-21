@@ -86,7 +86,7 @@ will skip as many traces as necessary while acquisition is going on.
 Status
 ^^^^^^
 
-The status field is not used in SPIDAR-SDK.
+The status field is not used in SPIDAR SDK.
 
 Stacks
 ^^^^^^
