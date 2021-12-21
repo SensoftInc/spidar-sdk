@@ -1,5 +1,6 @@
+*****
 Setup
-#####
+*****
 
 This resource allows the client to get or set the configuration of devices connected to the NIC.
 
@@ -15,8 +16,8 @@ This resource allows the client to get or set the configuration of devices conne
      - * GET: Read the parameter structure from all connected devices.
        * PUT: Set the parameter structure for any or all connected devices.
 
-Date/Time Attributes
-********************
+Attributes
+==========
 
 .. list-table::
    :widths: 25 25 50
@@ -51,10 +52,12 @@ Date/Time Attributes
      - Method used for triggering GPR trace acquisition. Must be "Free" or "Pulse".
    * - window_time_shift_ps
      - Integer
-     - Offset used to position the receiver's recording window within range of the transmitter pulse. For monostatic GPRs, the window time shift reference is the calibrated value necessary to place first break at point 1 on the trace.
+     - Offset used to position the receiver's recording window within range of the transmitter pulse. For monostatic
+       GPRs, the window time shift reference is the calibrated value necessary to place first break at point 1 on the
+       trace.
 
 Read the setup
-**************
+==============
 
 Sample request
 --------------
@@ -94,11 +97,10 @@ Sample response data
     }
 
 Change the setup
-****************
+================
 
 Sample request
 --------------
-
 
 .. tabs::
   
@@ -138,7 +140,7 @@ Sample response
 
 
 GPR Parameter Ranges
-*********************
+====================
 
 .. list-table::
    :widths: 60 25 30 25 100
@@ -182,7 +184,7 @@ GPR Parameter Ranges
 
 
 Errors
-******
+======
 
 Value out of range
 ------------------
@@ -192,7 +194,8 @@ This status code is returned for any of the following reasons:
 
     - One or more parameters are out of the defined range.
     - An input parameter is outside the allowed range of values.
-    - The input combination of points_per_trace and time_sampling_interval_ps result in a time_window outside the allowed range.
+    - The input combination of points_per_trace and time_sampling_interval_ps result in a time_window outside the
+allowed range.
 
 Invalid Input Parameter Format
 ------------------------------
@@ -216,17 +219,19 @@ GPR Already Running
 The connected GPR device is currently acquiring data and must be stopped before running setup
 
 Warnings
-********
+========
 
 Unrecognized Input
 ------------------
 (Status Code: 912)
 
-This warning is returned if any of the input parameters were unrecognized and as a result did not apply any changes to the system
+This warning is returned if any of the input parameters were unrecognized and as a result did not apply any changes to
+the system
 
 Modified Input
 --------------
 (Status Code: 913)
 
-This warning is returned when an input value is not in the proper resolution. The input value will be rounded to the closest valid value and accepted
+This warning is returned when an input value is not in the proper resolution. The input value will be rounded to the
+closest valid value and accepted
 

@@ -25,6 +25,6 @@ Resources
    nic_system_info
    nic_status
    nic_power
-   setup
+   nic_setup
    nic_acquisition
    gpr
