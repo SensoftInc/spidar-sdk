@@ -1,7 +1,8 @@
-GPR System Information
-######################
+******************
+System Information
+******************
 
-This resource allows the client to get system information including component versions and serial numbers from the NIC.
+This resource allows the client to get system information including component versions and serial numbers from the GPR.
 
 .. list-table::
    :widths: 25 75
@@ -14,8 +15,8 @@ This resource allows the client to get system information including component ve
    * - Supported methods
      - * GET: Read the version and serial number information from the GPR and antennas
 
-NIC System Attributes
-*********************
+Attributes
+==========
 
 .. list-table::
    :widths: 25 25 50
@@ -45,7 +46,7 @@ NIC System Attributes
 
 
 Read the GPR system information
-*******************************
+===============================
 
 Sample request
 --------------
@@ -89,7 +90,7 @@ Sample response data
    }
 
 Errors
-******
+======
 
 GPR Not Powered
 ---------------
