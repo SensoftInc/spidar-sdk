@@ -87,11 +87,3 @@ To run the [reset data socket](example/reset_data_socket_during_collection_sdk.p
 ```python reset_data_socket_during_collection_sdk.py```
 
 Each script will output what commands it ran. For more details on what the script does refer to the python file.
-
-## Copyright and License
-
-```
-Copyright 2021 Sensors and Software Inc. All rights reserved.
-
-TODO: Add Software License 
-```
