@@ -32,13 +32,13 @@ Attributes
      - float
      - Voltage measured at the input of the NIC-500.
    * - memory/bytes_total
-     - float
+     - integer
      - Total amount of RAM available in bytes.
    * - memory/bytes_free
-     - float
+     - integer
      - Amount of unused RAM in bytes.
    * - memory/bytes_used
-     - float
+     - integer
      - Amount of used RAM in bytes.
    * - memory/percent_free
      - float
