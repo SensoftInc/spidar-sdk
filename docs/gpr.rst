@@ -2,7 +2,9 @@
 GPR
 ***
 
-This resource retrieves a list of available resources from the GPR.
+This resource retrieves a list of available resources from the GPR. The GPR is a sub-resource of the NIC. The GPR
+resource is limited to retrieving system information such as serial and version numbers, and control of the data
+socket over which trace data are sent.
 
 .. list-table::
    :widths: 25 75
@@ -29,10 +31,21 @@ Resources
 Data Format
 ===========
 
-The GPR data are sent in traces, each trace contains a header with information about the trace, and a data portion
+The GPR data are sent in trace format, each trace contains a header with information about the trace, and a data portion
 with the amplitude information received by the GPR. Data transmitted across the network is broken up to optimize
 transfer speeds, and may not always be whole traces. When reading data from the socket, the client must know the
-expected size of traces in bytes to ensure all the data is read.
+expected size of traces in bytes to ensure all the data is read. The size of a single trace is computed as:
+
+.. code-block::
+
+   trace_size_in_bytes = points_per_trace * bytes_per_point + trace_header_size_in_bytes
+
+where:
+
+.. code-block::
+
+   trace_header_size_in_bytes = 20
+   bytes_per_point = 4
 
 Field list
 ----------
