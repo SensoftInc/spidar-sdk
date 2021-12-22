@@ -30,7 +30,7 @@ Attributes
      - Option
      - Description
    * - state
-     - Integer
+     - integer
      - 0
      - All devices including NIC turned off.
    * -

@@ -26,28 +26,28 @@ Attributes
      - Type
      - Description
    * - smc_api_build
-     - String
+     - string
      - Build number of the smc api.
    * - fpga_version
-     - String
+     - string
      - Version of the installed fpga.
    * - app_dip
-     - String
+     - string
      - DIP number of the application.
    * - kernel_version
-     - String
+     - string
      - Version of the installed kernel.
    * - hardware_id
-     - String
+     - string
      - Unique identifier of the NIC hardware.
    * - os_dip
-     - String
+     - string
      - DIP number of the operating system.
    * - os_version
-     - String
+     - string
      - Version of the NIC operating system.
    * - nic_serial_number
-     - String
+     - string
      - Serial number of the NIC.
    * - app_version
      - Dict

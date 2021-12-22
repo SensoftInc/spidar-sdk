@@ -26,22 +26,22 @@ Attributes
      - Type
      - Description
    * - unit_ser_num
-     - String
+     - string
      - Serial number of the enclosure
    * - gic_serial_number
-     - String
+     - string
      - Serial number of the GIC board
    * - app_code_version
-     - String
+     - string
      - Version of software running on the device
    * - app_code_dip
-     - String
+     - string
      - DIP number of the software running on the device
    * - type
-     - String
+     - string
      - Identifies a device as RX or TX
    * - window_time_shift_reference_ps
-     - String
+     - string
      - The window time shift value to set to have first break appear at point 1 on the trace.
 
 

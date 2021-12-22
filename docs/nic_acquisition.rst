@@ -28,7 +28,7 @@ Attributes
      - Option
      - Description
    * - state
-     - Integer
+     - integer
      - 0
      - Stop data acquisition and reset the trace numbering.
    * -

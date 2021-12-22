@@ -26,7 +26,7 @@ Attributes
      - Type
      - Description
    * - port
-     - Integer
+     - integer
      - Port identifier for data socket.
 
 Read the Data Socket Port

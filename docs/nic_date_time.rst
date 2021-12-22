@@ -28,28 +28,28 @@ Attributes
      - Type
      - Description
    * - date_time
-     - String
+     - string
      - The current date and time formatted as ISO8601 standard.
    * - year
-     - Integer
+     - integer
      - 4 digit year
    * - month
-     - Integer
+     - integer
      - Between 1 and 12
    * - day
-     - Integer
+     - integer
      - Between 1 and 31
    * - hour
-     - Integer
+     - integer
      - Between 0 and 23
    * - minute
-     - Integer
+     - integer
      - Between 0 and 59
    * - second
-     - Integer
+     - integer
      - Between 0 and 59
    * - tz_offset
-     - String
+     - string
      - Timezone offset in the format +/-HHMM
 
 Read the date and time

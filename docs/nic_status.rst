@@ -26,25 +26,25 @@ Attributes
      - Type
      - Description
    * - processor/temperature_c
-     - Float
+     - float
      - Temperature of the CPU in degrees centigrade
    * - power/input_voltage
-     - Float
+     - float
      - Voltage measured at the input of the NIC-500
    * - memory/bytes_total
-     - Float
+     - float
      - Total amount of RAM available in bytes
    * - memory/bytes_free
-     - Float
+     - float
      - Amount of unused RAM in bytes
    * - memory/bytes_used
-     - Float
+     - float
      - Amount of used RAM in bytes
    * - memory/percent_free
-     - Float
+     - float
      - Amount of RAM free as a percentage of the total available
    * - memory/percent_used
-     - Float
+     - float
      - Amount of RAM used as a percentage of the total available
 
 Read the NIC device status

@@ -27,31 +27,31 @@ Attributes
      - Type
      - Description
    * - timer
-     - Timer parameter structure
+     - timer parameter structure
      -
    * - period_s
-     - Float
+     - float
      - Interval between trigger events when the GPR trigger mode is set to "Free".
-   * - gpr
-     - GPR parameter structure
+   * - gpr0
+     - gpr0 parameter structure
      -
    * - points_per_trace
-     - Integer
+     - integer
      - Number of sample points to collect per trace.
    * - time_sampling_interval_ps
-     - Integer
+     - integer
      - The time interval between sample points on a trace.
    * - frequency_MHz
-     - Float
+     - float
      - The centre frequency of the GPR transmitting and receiving antenna.
    * - point_stacks
-     - Integer
+     - integer
      - Point stacks are collected at the receiver. Must be a power of 2, between 1 and 32768.
    * - trigger_mode
-     - String
+     - string
      - Method used for triggering GPR trace acquisition. Must be "Free" or "Pulse".
    * - window_time_shift_ps
-     - Integer
+     - integer
      - Offset used to position the receiver's recording window within range of the transmitter pulse. For monostatic
        GPRs, the window time shift reference is the calibrated value necessary to place first break at point 1 on the
        trace.
@@ -106,13 +106,13 @@ Sample request
   
    .. code-tab:: python
 
-      configuration = json.dumps({"gpr": {"parameters": {"points_per_trace": 200, "point_stacks": 32}}, "timer": {"parameters": {"period_s": 0.1}}})
+      configuration = json.dumps({"gpr0": {"parameters": {"points_per_trace": 200, "point_stacks": 32}}, "timer": {"parameters": {"period_s": 0.1}}})
       response = requests.put("http://192.168.20.221:8080/api/smc/setup", data={"data": configuration})
 
 
    .. code-tab:: console curl
 
-      curl -X PUT --data-urlencode "data={\"gpr\": {\"point_stacks\": 2048}}" http://192.168.20.221:8080/api/smc/setup
+      curl -X PUT --data-urlencode "data={\"gpr0\": {\"point_stacks\": 2048}}" http://192.168.20.221:8080/api/smc/setup
 
 Sample response
 ---------------
@@ -126,7 +126,7 @@ Sample response
               "period_s": 0.1
             }
         },
-        "gpr": {
+        "gpr0": {
             "parameters": {
                 "time_sampling_interval_ps": 100,
                 "frequency_MHz": 1000,
