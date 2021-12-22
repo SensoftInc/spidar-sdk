@@ -72,14 +72,12 @@ Sample response data
       "dev1": {
         "unit_serial_number": "000066660000",
         "type": "TX",
-        "app_code_dip": "2004-00229-01",
-        "app_code_version": "NA"
+        "app_code_dip": "2004-00229-01"
       },
       "dev0": {
         "unit_serial_number": "000066660000",
         "type": "RX",
-        "app_code_dip": "2004-00226-02",
-        "app_code_version": "NA"
+        "app_code_dip": "2004-00226-02"
       },
       "unit_serial_number": "FFFFFFFFFFFF",
       "app_code_version": "3.039",
