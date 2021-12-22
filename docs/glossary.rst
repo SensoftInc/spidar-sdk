@@ -22,31 +22,23 @@ Response
 
 Each request to SPIDAR SDK's API will generate a standard response. Each response is represented as a JSON dictionary
 structure with "status", "message", "data" and "success" fields. The following example is a response of
-nic/system_information resource:
+nic/power resource:
 
 .. code-block:: json
 
     {
-        "status": {
-            "status_code": 0,
-            "message": "The command executed successfully",
-            "type": "SUCCESS",
-            "source": "nic/system_information",
-            "title": "Success"
-        },
+      "status": {
+        "status_code": 0,
         "message": "The command executed successfully",
-        "data": {
-            "smc_api_build": "1783",
-            "fpga_version": "24",
-            "app_dip": "",
-            "kernel_version": "3.10.17",
-            "hardware_id": "000000000000",
-            "os_dip": "2017-00041-10",
-            "os_version": "2.10.583",
-            "nic_serial_number": "0000-0000-0000",
-            "app_version": "V1R4B111"
-        },
-        "success": true
+        "type": "SUCCESS",
+        "source": "nic/power",
+        "title": "Success"
+      },
+      "message": "The command executed successfully",
+      "data": {
+        "state": 1
+      },
+      "success": true
     }
 
 "status" field is a dictionary structure which describes the execution state of the resource, "message" is a human
