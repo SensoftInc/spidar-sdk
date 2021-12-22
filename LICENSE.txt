@@ -38,7 +38,7 @@ SDK.
     provided, that each such employee and contractor first is bound by a written agreement that contains use and
     nondisclosure restrictions at least as protective of the Confidential Information as those set forth in this Agreement.
 
-4. Warranties
+4. Warranties.
 
     4.1. Company warrants the User that the SPIDAR SDK will operate in substantial conformity with the Documentation. The
     Company does not warrant that User’s use of the SPIDAR SDK will be error-free. The Company’s sole liability (and User’s
