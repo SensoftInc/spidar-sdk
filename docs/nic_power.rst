@@ -114,7 +114,7 @@ GPR Type Not Supported
 ----------------------
 (Status Code: 4013)
 
-GPR Type Not Supported is returned when the connected GPR device is not supported in SPIDAR OEM mode
+GPR Type Not Supported is returned when the connected GPR device is not supported in SPIDAR SDK mode
 
 GPR No Receiver Detected
 ------------------------
