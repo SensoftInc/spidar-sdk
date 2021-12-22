@@ -27,19 +27,19 @@ Attributes
      - Description
    * - unit_ser_num
      - string
-     - Serial number of the enclosure
+     - Serial number of the enclosure.
    * - gic_serial_number
      - string
-     - Serial number of the GIC board
+     - Serial number of the GIC board.
    * - app_code_version
      - string
-     - Version of software running on the device
+     - Version of software running on the device.
    * - app_code_dip
      - string
-     - DIP number of the software running on the device
+     - DIP number of the software running on the device.
    * - type
      - string
-     - Identifies a device as RX or TX
+     - Identifies a device as RX or TX.
    * - window_time_shift_reference_ps
      - string
      - The window time shift value to set to have first break appear at point 1 on the trace.

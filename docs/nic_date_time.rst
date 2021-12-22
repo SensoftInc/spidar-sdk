@@ -32,25 +32,25 @@ Attributes
      - The current date and time formatted as ISO8601 standard.
    * - year
      - integer
-     - 4 digit year
+     - A four digit year.
    * - month
      - integer
-     - Between 1 and 12
+     - A value between one and 12.
    * - day
      - integer
-     - Between 1 and 31
+     - A value between one and 31.
    * - hour
      - integer
-     - Between 0 and 23
+     - A value between zero and 23.
    * - minute
      - integer
-     - Between 0 and 59
+     - A value between zero and 59.
    * - second
      - integer
-     - Between 0 and 59
+     - A value between zero and 59.
    * - tz_offset
      - string
-     - Timezone offset in the format +/-HHMM
+     - Timezone offset in the format +/-HHMM.
 
 Read the date and time
 ======================
