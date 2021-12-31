@@ -212,13 +212,13 @@ GPR Not Powered
 ---------------
 (Status Code: 4001)
 
-The connected GPR device is not powered on
+The connected GPR device is not powered on.
 
 GPR Already Running
 -------------------
 (Status Code: 4004)
 
-The connected GPR device is currently acquiring data and must be stopped before running setup
+The connected GPR device is currently acquiring data and must be stopped before running setup.
 
 Warnings
 ========
@@ -228,12 +228,12 @@ Unrecognized Input
 (Status Code: 912)
 
 This warning is returned if any of the input parameters were unrecognized and as a result did not apply any changes to
-the system
+the system.
 
 Modified Input
 --------------
 (Status Code: 913)
 
 This warning is returned when an input value is not in the proper resolution. The input value will be rounded to the
-closest valid value and accepted
+closest valid value and accepted.
 

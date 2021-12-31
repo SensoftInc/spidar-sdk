@@ -93,34 +93,33 @@ Sample response
 Errors
 ======
 
-GPR Not Powered
----------------
-(Status Code: 4001)
-
-The connected GPR device is not powered on
-
-GPR Not Running
----------------
-(Status Code: 4003)
-
-Returned when the connected GPR device is not running and a stop or pause state is input
-
-GPR Already Running
--------------------
-(Status Code: 4004)
-
-Returned when the connected GPR device is already running and a start state is input
-
-GPR Not Initialized
--------------------
-(Status Code: 4005)
-
-Returned when a start state is input, but the connected GPR device has not been initialized with the setup command first
-
 Invalid Parameter Format
 ------------------------
 (Status Code: 0011)
 
 An INVALID_PARAMETER_FORMAT error is returned if any of the input parameters have a type mismatch from the expected
-format
+format.
 
+GPR Not Powered
+---------------
+(Status Code: 4001)
+
+The connected GPR device is not powered on.
+
+GPR Not Running
+---------------
+(Status Code: 4003)
+
+Returned when the connected GPR device is not running and a stop or pause state is input.
+
+GPR Already Running
+-------------------
+(Status Code: 4004)
+
+Returned when the connected GPR device is already running and a start state is input.
+
+GPR Not Initialized
+-------------------
+(Status Code: 4005)
+
+Returned when a start state is input, but the connected GPR device has not been initialized with the setup command first.

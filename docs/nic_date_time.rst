@@ -129,7 +129,7 @@ Invalid Parameter Format
 ------------------------
 (Status Code: 0011)
 
-An INVALID_PARAMETER_FORMAT error is returned if any of the input parameters have a type mismatch from the expected format
+An INVALID_PARAMETER_FORMAT error is returned if any of the input parameters have a type mismatch from the expected format.
 
 GPR Already Running
 -------------------
