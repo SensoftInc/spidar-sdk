@@ -116,7 +116,7 @@ Sample response
 Errors
 ======
 
-Value out of range
+Value Out of Range
 ------------------
 (Status Code: 0008)
 
@@ -125,13 +125,13 @@ This status code is returned for any of the following reasons:
 - The date may not be set earlier than 2017-01-01. A VALUE_OUT_OF_RANGE error will be returned if the year or a combination of year and offset are set less than 2017.
 - If any of the fields are out of their normal range, a VALUE_OUT_OF_RANGE error will be returned. For example, if the requested month 15, or hour is 28.
 
-Invalid parameter format
+Invalid Parameter Format
 ------------------------
 (Status Code: 0011)
 
 An INVALID_PARAMETER_FORMAT error is returned if any of the input parameters have a type mismatch from the expected format
 
-GPR already running
+GPR Already Running
 -------------------
 (Status Code: 4004)
 

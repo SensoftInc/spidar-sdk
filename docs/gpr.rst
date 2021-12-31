@@ -105,7 +105,7 @@ Stacks
 ^^^^^^
 
 Indicates the number of stacks, or measurements used to average the trace. The stacks field should match the
-point_stacks setting supplied to the setup resource.
+point_stacks setting supplied to the :ref:`nic_setup_label` resource.
 
 Header size
 ^^^^^^^^^^^
@@ -119,4 +119,4 @@ Data
 
 The data portion of the trace contains and array of 4 byte floats representing the received GPR amplitude in mV.
 The data points have already been normalized for stacks. The time between points is determined by the
-time_sampling_interval_ps in the setup resource.
+time_sampling_interval_ps in the :ref:`nic_setup_label` resource.

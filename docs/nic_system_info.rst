@@ -50,7 +50,7 @@ Attributes
      - string
      - Serial number of the NIC.
    * - app_version
-     - Dict
+     - dict
      - Application version information.
 
 Read the NIC system information

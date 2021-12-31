@@ -1,3 +1,5 @@
+.. _data_socket_label:
+
 ***********
 Data Socket
 ***********
@@ -57,3 +59,19 @@ Sample response data
      }
     }
    }
+
+
+Errors
+======
+
+Command Not Supported
+---------------------
+(Status Code: 0009)
+
+This error is returned when the server is unable to setup the data socket.
+
+Device Failed to Initialized
+----------------------------
+(Status Code: 1006)
+
+This error is returned when the server is unable to communicate with the data socket.

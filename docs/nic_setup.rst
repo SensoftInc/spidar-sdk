@@ -1,3 +1,5 @@
+.. _nic_setup_label:
+
 *****
 Setup
 *****
@@ -186,7 +188,7 @@ GPR Parameter Ranges
 Errors
 ======
 
-Value out of range
+Value Out of Range
 ------------------
 (Status Code: 0008)
 
