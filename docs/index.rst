@@ -17,7 +17,9 @@ Control of the system is achieved by accessing resources primarily on the nic de
 A gpr device representing the GPR hardware attached to the NIC-500 can provide information about the hardware as well
 as creating and resetting the data socket.
 
-Sample scripts written in Python are available from the GitHub repository `<https://github.com/sensoftinc/spidar-sdk>`_
+Sample scripts written in Python are available from the `GitHub`_ repository.
+
+.. _Github: https://github.com/sensoftinc/spidar-sdk
 
 .. toctree::
    :maxdepth: 1
