@@ -6,8 +6,8 @@ Resource
 ========
 
 An object with type, data, relationships to other resources and set of methods to operate on it. For example,
-in the endpoint "api/nic/system_information", "nic" is a resource which represents NIC-500 device, and
-"system_information" is a resource which can respond with serial number and version information from it.
+in the endpoint "api/nic/power", "nic" is a resource which represents NIC-500 device, and
+"power" is a resource which can respond with serial number and version information from it.
 
 Request
 =======
