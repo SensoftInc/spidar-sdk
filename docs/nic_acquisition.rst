@@ -1,5 +1,6 @@
+***********
 Acquisition
-###########
+***********
 
 This resource allows the client to get or set the acquisition state devices connected to the NIC.
 
@@ -15,31 +16,33 @@ This resource allows the client to get or set the acquisition state devices conn
      - * GET: Read the acquisition state.
        * PUT: Set the acquisition state.
 
-Acquisition State Attributes
-****************************
+Attributes
+==========
 
 .. list-table::
-   :widths: 25 25 50
+   :widths: 20 20 10 50
    :header-rows: 1
 
    * - Field
      - Type
+     - Option
      - Description
    * - state
-     - Integer
-     - 
-   * - 
+     - integer
      - 0
-     - Stop data acquisition.
-   * - 
-     - 1
-     - Start data acqisition.  
+     - Stop data acquisition and reset the trace numbering.
    * -
+     -
+     - 1
+     - Start data acquisition.
+   * - 
+     -
      - 2
-     - Pause data acquisition.
+     - Pause data acquisition, does not reset trace number. Start acquisition again to resume.
+
   
 Read the acquisition state
-**************************
+==========================
 
 Sample request
 --------------
@@ -65,7 +68,7 @@ Sample response data
    }
 
 Start data acquisition
-**********************
+======================
 
 Sample request
 --------------
@@ -88,42 +91,34 @@ Sample response
    }
 
 Errors
-******
-
-GPR Not Powered
----------------
-(Status Code: 4001)
-
-The connected GPR device is not powered on
-
-GPR Not Running
----------------
-(Status Code: 4003)
-
-Returned when the connected GPR device is not running and a stop or pause state is input
-
-GPR Already Running
--------------------
-(Status Code: 4004)
-
-Returned when the connected GPR device is already running and a start state is input
-
-GPR Not Initialized
--------------------
-(Status Code: 4005)
-
-Returned when a start state is input, but the connected GPR device has not been initialized with the setup command first
+======
 
 Invalid Parameter Format
 ------------------------
 (Status Code: 0011)
 
-An INVALID_PARAMETER_FORMAT error is returned if any of the input parameters have a type mismatch from the expected format
+Returned if any of the input parameters have a type mismatch from the expected format.
 
-Warnings
-********
+GPR Not Powered
+---------------
+(Status Code: 4001)
 
-No transmitter detected
------------------------
+The connected GPR device is not powered on.
 
-No transmitter was detected on power up.
+GPR Not Running
+---------------
+(Status Code: 4003)
+
+Returned when the connected GPR device is not running and a stop or pause state is input.
+
+GPR Already Running
+-------------------
+(Status Code: 4004)
+
+Returned when the connected GPR device is already running and a start state is input.
+
+GPR Not Initialized
+-------------------
+(Status Code: 4005)
+
+Returned when a start state is input, but the connected GPR device has not been initialized with the setup command first.

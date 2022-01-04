@@ -1,9 +1,10 @@
-Power State
-###########
+*****
+Power
+*****
 
-This resource allows the client to get or set the power state devices connected to the NIC. When the NIC is booted,
+This resource allows the client to get or set the power state of devices connected to the NIC. When the NIC is booted,
 connected devices such as the GPR will remain off until requested to turn on. Once the GPR is turned on, it cannot be
-turned off except to power down the NIC.
+turned off except by powering down the NIC.
 
 .. list-table::
    :widths: 25 75
@@ -17,31 +18,32 @@ turned off except to power down the NIC.
      - * GET: Read the power state of all connected devices.
        * PUT: Set the power state of all devices including the NIC.
 
-Power State Attributes
-**********************
+Attributes
+==========
 
 .. list-table::
-   :widths: 25 25 50
+   :widths: 20 20 10 50
    :header-rows: 1
 
    * - Field
      - Type
+     - Option
      - Description
    * - state
-     - Integer
-     - 
-   * -  
-     - 0 
+     - integer
+     - 0
      - All devices including NIC turned off.
-   * - 
-     - 1 
-     - NIC is on but all connected devices are off. 
-   * - 
+   * -
+     -
+     - 1
+     - NIC is on but all connected devices are off.
+   * -
+     -
      - 2
      - NIC and all connected devices are turned on.
 
 Read the power state
-********************
+====================
 
 Sample request
 --------------
@@ -67,7 +69,7 @@ Sample response data
    }
 
 Turn on all connected devices
-*****************************
+=============================
 
 Sample request
 --------------
@@ -87,10 +89,11 @@ Sample response
    {
    "data": {
     "state": 2
+    }
    }
 
 Errors
-******
+======
 
 Value Out Of Range
 ------------------
@@ -107,12 +110,11 @@ This status code is returned for any of the following reasons:
 - The connected GPR device is not powered on.
 - The specified GPR device is not connected.
 
-
 GPR Type Not Supported
 ----------------------
 (Status Code: 4013)
 
-GPR Type Not Supported is returned when the connected GPR device is not supported in SPIDAR OEM mode
+GPR Type Not Supported is returned when the connected GPR device is not supported in SPIDAR SDK mode
 
 GPR No Receiver Detected
 ------------------------
@@ -133,11 +135,11 @@ GPR Frequency Mismatch
 A Frequency Mismatch occurs when the center frequency of the Rx or Tx on the GPR device is not supported by the other
 
 Warnings
-*********
+========
 
 No Transmitted Detected
 -----------------------
 (Status Code: 919)
 
-This warning is returned when there is no transmitter detected on the GPR device. The device can still be used to collect
-data but will only be listening to background noise
+This warning is returned when there is no transmitter detected on the GPR device. The device can still be used to
+collect data but will only be listening to background noise

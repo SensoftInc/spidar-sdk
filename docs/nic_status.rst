@@ -1,5 +1,6 @@
+******
 Status
-######
+******
 
 This resource gets status information from the NIC including battery voltage and processor temperature.
 
@@ -14,8 +15,8 @@ This resource gets status information from the NIC including battery voltage and
    * - Supported methods
      - * GET: Read current status information such as battery voltage and processor temperature
 
-NIC System Attributes
-*********************
+Attributes
+==========
 
 .. list-table::
    :widths: 25 25 50
@@ -25,29 +26,29 @@ NIC System Attributes
      - Type
      - Description
    * - processor/temperature_c
-     - Float
-     - Temperature of the CPU in degrees centigrade
+     - float
+     - Temperature of the CPU in degrees centigrade.
    * - power/input_voltage
-     - Float
-     - Voltage measured at the input of the NIC-500
+     - float
+     - Voltage measured at the input of the NIC-500.
    * - memory/bytes_total
-     - Float
-     - Total amount of RAM available in bytes
+     - integer
+     - Total amount of RAM available in bytes.
    * - memory/bytes_free
-     - Float
-     - Amount of unused RAM in bytes
+     - integer
+     - Amount of unused RAM in bytes.
    * - memory/bytes_used
-     - Float
-     - Amount of used RAM in bytes
+     - integer
+     - Amount of used RAM in bytes.
    * - memory/percent_free
-     - Float
-     - Amount of RAM free as a percentage of the total available
+     - float
+     - Amount of RAM free as a percentage of the total available.
    * - memory/percent_used
-     - Float
-     - Amount of RAM used as a percentage of the total available
+     - float
+     - Amount of RAM used as a percentage of the total available.
 
-Read the NIC system information
-*******************************
+Read the NIC device status
+==========================
 
 Sample request
 --------------

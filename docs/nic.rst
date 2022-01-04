@@ -1,5 +1,6 @@
-Resources
-#########
+***
+NIC
+***
 
 This resource retrieves a list of available resources from the NIC.
 
@@ -12,13 +13,18 @@ This resource retrieves a list of available resources from the NIC.
    * - Returns
      - List of sub resources
    * - Supported methods
-     - * GET: Read the version and serial number information from the NIC
+     - * GET: Retrieve a list of devices and resources
+
+Resources
+=========
 
 .. toctree::
+   :maxdepth: 1
 
-   date_time
+   nic_date_time
    nic_system_info
    nic_status
-   power
-   setup
-   acquisition
+   nic_power
+   nic_setup
+   nic_acquisition
+   gpr

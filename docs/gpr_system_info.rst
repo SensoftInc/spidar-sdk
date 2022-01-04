@@ -1,7 +1,8 @@
-GPR System Information
-######################
+******************
+System Information
+******************
 
-This resource allows the client to get system information including component versions and serial numbers from the NIC.
+This resource allows the client to get system information including component versions and serial numbers from the GPR.
 
 .. list-table::
    :widths: 25 75
@@ -12,10 +13,10 @@ This resource allows the client to get system information including component ve
    * - Returns
      - system information structure
    * - Supported methods
-     - * GET: Read the version and serial number information from the GPR and antennas
+     - * GET: Read the version and serial number information from the GPR and antennas.
 
-NIC System Attributes
-*********************
+Attributes
+==========
 
 .. list-table::
    :widths: 25 25 50
@@ -25,27 +26,27 @@ NIC System Attributes
      - Type
      - Description
    * - unit_ser_num
-     - String
-     - Serial number of the enclosure
+     - string
+     - Serial number of the enclosure.
    * - gic_serial_number
-     - String
-     - Serial number of the GIC board
+     - string
+     - Serial number of the GIC board.
    * - app_code_version
-     - String
-     - Version of software running on the device
+     - string
+     - Version of software running on the device.
    * - app_code_dip
-     - String
-     - DIP number of the software running on the device
+     - string
+     - DIP number of the software running on the device.
    * - type
-     - String
-     - Identifies a device as RX or TX
+     - string
+     - Identifies a device as RX or TX.
    * - window_time_shift_reference_ps
-     - String
+     - string
      - The window time shift value to set to have first break appear at point 1 on the trace.
 
 
 Read the GPR system information
-*******************************
+===============================
 
 Sample request
 --------------
@@ -71,14 +72,12 @@ Sample response data
       "dev1": {
         "unit_serial_number": "000066660000",
         "type": "TX",
-        "app_code_dip": "2004-00229-01",
-        "app_code_version": "NA"
+        "app_code_dip": "2004-00229-01"
       },
       "dev0": {
         "unit_serial_number": "000066660000",
         "type": "RX",
-        "app_code_dip": "2004-00226-02",
-        "app_code_version": "NA"
+        "app_code_dip": "2004-00226-02"
       },
       "unit_serial_number": "FFFFFFFFFFFF",
       "app_code_version": "3.039",
@@ -89,7 +88,7 @@ Sample response data
    }
 
 Errors
-******
+======
 
 GPR Not Powered
 ---------------

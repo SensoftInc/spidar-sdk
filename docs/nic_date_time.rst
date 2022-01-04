@@ -1,5 +1,6 @@
+*************
 Date and Time
-#############
+*************
 
 This resource allows the client to get or set the current date and time on the NIC. Time is stored
 without a timezone offset.
@@ -16,8 +17,8 @@ without a timezone offset.
      - * GET: Read the current date and time from the NIC
        * PUT: Set the date and/or time on the NIC
 
-Date/Time Attributes
-********************
+Attributes
+==========
 
 .. list-table::
    :widths: 25 25 50
@@ -27,32 +28,32 @@ Date/Time Attributes
      - Type
      - Description
    * - date_time
-     - String
+     - string
      - The current date and time formatted as ISO8601 standard.
    * - year
-     - Integer
-     - 4 digit year
+     - integer
+     - A four digit year.
    * - month
-     - Integer
-     - Between 1 and 12
+     - integer
+     - A value between one and 12.
    * - day
-     - Integer
-     - Between 1 and 31
+     - integer
+     - A value between one and 31.
    * - hour
-     - Integer
-     - Between 0 and 23
+     - integer
+     - A value between zero and 23.
    * - minute
-     - Integer
-     - Between 0 and 59
+     - integer
+     - A value between zero and 59.
    * - second
-     - Integer
-     - Between 0 and 59
+     - integer
+     - A value between zero and 59.
    * - tz_offset
-     - String
-     - Timezone offset in the format +/-HHMM
+     - string
+     - Timezone offset in the format +/-HHMM.
 
 Read the date and time
-**********************
+======================
 
 Sample request
 --------------
@@ -84,7 +85,7 @@ Sample response data
    }
 
 Set the date and time
-*********************
+=====================
 
 Sample request
 --------------
@@ -113,9 +114,9 @@ Sample response
    }
 
 Errors
-******
+======
 
-Value out of range
+Value Out of Range
 ------------------
 (Status Code: 0008)
 
@@ -124,14 +125,13 @@ This status code is returned for any of the following reasons:
 - The date may not be set earlier than 2017-01-01. A VALUE_OUT_OF_RANGE error will be returned if the year or a combination of year and offset are set less than 2017.
 - If any of the fields are out of their normal range, a VALUE_OUT_OF_RANGE error will be returned. For example, if the requested month 15, or hour is 28.
 
-
 Invalid Parameter Format
 ------------------------
 (Status Code: 0011)
 
-An INVALID_PARAMETER_FORMAT error is returned if any of the input parameters have a type mismatch from the expected format
+Returned if any of the input parameters have a type mismatch from the expected format.
 
-GPR already running
+GPR Already Running
 -------------------
 (Status Code: 4004)
 

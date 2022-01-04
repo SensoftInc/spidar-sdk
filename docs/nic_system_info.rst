@@ -1,5 +1,6 @@
-NIC System Information
-######################
+******************
+System Information
+******************
 
 This resource allows the client to get system information including component versions and serial numbers from the NIC.
 
@@ -14,8 +15,8 @@ This resource allows the client to get system information including component ve
    * - Supported methods
      - * GET: Read the version and serial number information from the NIC
 
-NIC System Attributes
-*********************
+Attributes
+==========
 
 .. list-table::
    :widths: 25 25 50
@@ -25,35 +26,35 @@ NIC System Attributes
      - Type
      - Description
    * - smc_api_build
-     - String
+     - string
      - Build number of the smc api.
    * - fpga_version
-     - String
+     - string
      - Version of the installed fpga.
    * - app_dip
-     - String
+     - string
      - DIP number of the application.
    * - kernel_version
-     - String
-     - Version of the installed kernal.
+     - string
+     - Version of the installed kernel.
    * - hardware_id
-     - String
+     - string
      - Unique identifier of the NIC hardware.
    * - os_dip
-     - String
+     - string
      - DIP number of the operating system.
    * - os_version
-     - String
+     - string
      - Version of the NIC operating system.
    * - nic_serial_number
-     - String
+     - string
      - Serial number of the NIC.
    * - app_version
-     - Dict
+     - dict
      - Application version information.
 
 Read the NIC system information
-*******************************
+===============================
 
 Sample request
 --------------
@@ -70,19 +71,18 @@ Sample request
 
 Sample response data
 --------------------
-
 .. code-block:: json
 
    {
     "data": {
-        "smc_api_build": "1128",
-        "fpga_version": "24",
-        "app_dip": "",
+        "smc_api_build": "1829",
+        "fpga_version": "29",
+        "app_dip": "2018-00023-03",
         "kernel_version": "3.10.17",
         "hardware_id": "001EC0AF2D9B",
         "os_dip": "2017-00041-08",
-        "os_version": "2.08.512",
-        "nic_serial_number": "",
-        "app_version": "V1R4B111"
+        "os_version": "2.11.622",
+        "nic_serial_number": "123456789012",
+        "app_version": "V1R4B1223"
     }
    }

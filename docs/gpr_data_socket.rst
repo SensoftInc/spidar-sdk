@@ -1,5 +1,8 @@
+.. _data_socket_label:
+
+***********
 Data Socket
-###########
+***********
 
 This resource retrieves the port number to connect for data streaming.
 
@@ -14,8 +17,8 @@ This resource retrieves the port number to connect for data streaming.
    * - Supported methods
      - * GET: Read the data socket port number
 
-Data Socket Attributes
-**********************
+Attributes
+==========
 
 .. list-table::
    :widths: 25 25 50
@@ -25,15 +28,14 @@ Data Socket Attributes
      - Type
      - Description
    * - port
-     - Integer
+     - integer
      - Port identifier for data socket.
 
 Read the Data Socket Port
-*************************
+=========================
 
 Sample request
 --------------
-
 
 .. tabs::
   
@@ -52,5 +54,24 @@ Sample response data
 
    {
    "data": {
-    "port": 60039,
+    "data_socket": {
+     "port": 60039
+     }
+    }
    }
+
+
+Errors
+======
+
+Command Not Supported
+---------------------
+(Status Code: 0009)
+
+This error is returned when the server is unable to setup the data socket.
+
+Device Failed to Initialized
+----------------------------
+(Status Code: 1006)
+
+This error is returned when the server is unable to communicate with the data socket.

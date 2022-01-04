@@ -1,5 +1,6 @@
+*****************
 Data Socket Reset
-#################
+*****************
 
 This resource sends a command to the server to reset data socket when there is a network connection failure.
 
@@ -14,17 +15,16 @@ This resource sends a command to the server to reset data socket when there is a
    * - Supported methods
      - * PUT: Reset data socket
 
-Data Socket Reset Attributes
-****************************
+Attributes
+==========
 
 N/A
 
 Reset the Data Socket Port
-**************************
+==========================
 
 Sample request
 --------------
-
 
 .. tabs::
   
@@ -44,3 +44,18 @@ Sample response data
    {
    "data": {}
    }
+
+Errors
+======
+
+Device Not Initialized
+----------------------
+(Status Code: 1006)
+
+This error is returned when the data socket has not been setup. Refer to resource :ref:`data_socket_label` on how setup a data socket.
+
+Device Failed to Initialized
+----------------------------
+(Status Code: 1006)
+
+This error is returned when the server is unable to communicate with the data socket.

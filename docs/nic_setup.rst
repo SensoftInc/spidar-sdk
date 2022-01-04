@@ -1,5 +1,8 @@
+.. _nic_setup_label:
+
+*****
 Setup
-#####
+*****
 
 This resource allows the client to get or set the configuration of devices connected to the NIC.
 
@@ -15,8 +18,8 @@ This resource allows the client to get or set the configuration of devices conne
      - * GET: Read the parameter structure from all connected devices.
        * PUT: Set the parameter structure for any or all connected devices.
 
-Date/Time Attributes
-********************
+Attributes
+==========
 
 .. list-table::
    :widths: 25 25 50
@@ -26,35 +29,37 @@ Date/Time Attributes
      - Type
      - Description
    * - timer
-     - Timer parameter structure
+     - timer parameter structure
      -
    * - period_s
-     - Float
+     - float
      - Interval between trigger events when the GPR trigger mode is set to "Free".
-   * - gpr
-     - GPR parameter structure
+   * - gpr0
+     - gpr0 parameter structure
      -
    * - points_per_trace
-     - Integer
+     - integer
      - Number of sample points to collect per trace.
    * - time_sampling_interval_ps
-     - Integer
+     - integer
      - The time interval between sample points on a trace.
    * - frequency_MHz
-     - Float
+     - float
      - The centre frequency of the GPR transmitting and receiving antenna.
    * - point_stacks
-     - Integer
+     - integer
      - Point stacks are collected at the receiver. Must be a power of 2, between 1 and 32768.
    * - trigger_mode
-     - String
+     - string
      - Method used for triggering GPR trace acquisition. Must be "Free" or "Pulse".
    * - window_time_shift_ps
-     - Integer
-     - Offset used to position the receiver's recording window within range of the transmitter pulse. For monostatic GPRs, the window time shift reference is the calibrated value necessary to place first break at point 1 on the trace.
+     - integer
+     - Offset used to position the receiver's recording window within range of the transmitter pulse. For monostatic
+       GPRs, the window time shift reference is the calibrated value necessary to place first break at point 1 on the
+       trace.
 
 Read the setup
-**************
+==============
 
 Sample request
 --------------
@@ -94,23 +99,22 @@ Sample response data
     }
 
 Change the setup
-****************
+================
 
 Sample request
 --------------
-
 
 .. tabs::
   
    .. code-tab:: python
 
-      configuration = json.dumps({"gpr": {"parameters": {"points_per_trace": 200, "point_stacks": 32}}, "timer": {"parameters": {"period_s": 0.1}}})
+      configuration = json.dumps({"gpr0": {"parameters": {"points_per_trace": 200, "point_stacks": 32}}, "timer": {"parameters": {"period_s": 0.1}}})
       response = requests.put("http://192.168.20.221:8080/api/smc/setup", data={"data": configuration})
 
 
    .. code-tab:: console curl
 
-      curl -X PUT --data-urlencode "data={\"gpr\": {\"point_stacks\": 2048}}" http://192.168.20.221:8080/api/smc/setup
+      curl -X PUT --data-urlencode "data={\"gpr0\": {\"point_stacks\": 2048}}" http://192.168.20.221:8080/api/smc/setup
 
 Sample response
 ---------------
@@ -124,7 +128,7 @@ Sample response
               "period_s": 0.1
             }
         },
-        "gpr": {
+        "gpr0": {
             "parameters": {
                 "time_sampling_interval_ps": 100,
                 "frequency_MHz": 1000,
@@ -138,7 +142,7 @@ Sample response
 
 
 GPR Parameter Ranges
-*********************
+====================
 
 .. list-table::
    :widths: 60 25 30 25 100
@@ -182,9 +186,9 @@ GPR Parameter Ranges
 
 
 Errors
-******
+======
 
-Value out of range
+Value Out of Range
 ------------------
 (Status Code: 0008)
 
@@ -192,7 +196,8 @@ This status code is returned for any of the following reasons:
 
     - One or more parameters are out of the defined range.
     - An input parameter is outside the allowed range of values.
-    - The input combination of points_per_trace and time_sampling_interval_ps result in a time_window outside the allowed range.
+    - The input combination of points_per_trace and time_sampling_interval_ps result in a time_window outside the
+      allowed range.
 
 Invalid Input Parameter Format
 ------------------------------
@@ -207,26 +212,28 @@ GPR Not Powered
 ---------------
 (Status Code: 4001)
 
-The connected GPR device is not powered on
+The connected GPR device is not powered on.
 
 GPR Already Running
 -------------------
 (Status Code: 4004)
 
-The connected GPR device is currently acquiring data and must be stopped before running setup
+The connected GPR device is currently acquiring data and must be stopped before running setup.
 
 Warnings
-********
+========
 
 Unrecognized Input
 ------------------
 (Status Code: 912)
 
-This warning is returned if any of the input parameters were unrecognized and as a result did not apply any changes to the system
+This warning is returned if any of the input parameters were unrecognized and as a result did not apply any changes to
+the system.
 
 Modified Input
 --------------
 (Status Code: 913)
 
-This warning is returned when an input value is not in the proper resolution. The input value will be rounded to the closest valid value and accepted
+This warning is returned when an input value is not in the proper resolution. The input value will be rounded to the
+closest valid value and accepted.
 
