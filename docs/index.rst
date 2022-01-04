@@ -21,9 +21,17 @@ Sample scripts written in Python are available from the `GitHub`_ repository.
 
 .. _Github: https://github.com/sensoftinc/spidar-sdk
 
+The following devices can be controlled through the SPIDAR SDK API:
+
+.. toctree::
+   :maxdepth: 1
+
+   nic
+   gpr
+
+Clarification on SPIDAR SDK API terminology: 
+
 .. toctree::
    :maxdepth: 1
 
    glossary
-   nic
-   gpr
