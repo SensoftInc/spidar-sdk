@@ -67,9 +67,9 @@ details on how to update the name of the Python executable.
 
 7. Navigate into the sample scrip directory 
 
-    ```cd smc_server\sample_scripts```
+    ```cd example```
 
-8. Install the requirements to run the software. Replace ${VERSION} with the specific version you are using.
+8. Install the requirements to run the software. Replace ${VERSION} with the specific python version you are using.
 
     ```python -m pip install -r requirements_python${VERSION}.txt```
 
