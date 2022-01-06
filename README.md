@@ -69,7 +69,7 @@ details on how to update the name of the Python executable.
 
     ```cd example```
 
-8. Install the requirements to run the software. Replace ${VERSION} with the specific python version you are using.
+8. Install the requirements to run the software.
 
     ```python -m pip install -r requirements.txt```
 
