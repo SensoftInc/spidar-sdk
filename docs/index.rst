@@ -24,9 +24,9 @@ system and for instructions on how to activate the SDK mode.
 
 .. _Github: https://github.com/sensoftinc/spidar-sdk
 
-*****************
-License Agreement
-*****************
+********************
+Activation Agreement
+********************
 
 .. toctree::
    :maxdepth: 1
