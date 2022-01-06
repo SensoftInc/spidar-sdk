@@ -19,6 +19,9 @@ as creating and resetting the data socket.
 
 Sample scripts written in Python are available from the `GitHub`_ repository.
 
+Please reference the SPIDAR Operations Manual for details on how to physically connect and configure the NIC-500 SPIDAR 
+system and for instructions on how to activate the SDK mode.
+
 .. _Github: https://github.com/sensoftinc/spidar-sdk
 
 ************************************
