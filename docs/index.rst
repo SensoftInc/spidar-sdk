@@ -24,6 +24,15 @@ system and for instructions on how to activate the SDK mode.
 
 .. _Github: https://github.com/sensoftinc/spidar-sdk
 
+*****************
+License Agreement
+*****************
+
+.. toctree::
+   :maxdepth: 1
+
+   terms_and_conditions
+
 ************************************
 Overview SPIDAR SDK API Terminology 
 ************************************
@@ -43,11 +52,3 @@ Devices controlled by SPIDAR SDK API
    nic
    gpr
 
-*****************
-License Agreement
-*****************
-
-.. toctree::
-   :maxdepth: 1
-
-   terms_and_conditions
