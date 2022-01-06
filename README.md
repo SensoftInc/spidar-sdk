@@ -65,13 +65,13 @@ details on how to update the name of the Python executable.
 
     ```git clone git@github.com:SensoftInc/spidar-sdk.git```
 
-7. Navigate into the sample scrip directory 
+7. Navigate into the example directory 
 
     ```cd example```
 
 8. Install the requirements to run the software. Replace ${VERSION} with the specific python version you are using.
 
-    ```python -m pip install -r requirements_python${VERSION}.txt```
+    ```python -m pip install -r requirements.txt```
 
 9. When you are finish with your environment deactivate it
 
