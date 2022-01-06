@@ -12,7 +12,7 @@
 
 ## Documentation
 
-The API reference documentation is hosted on GitHub pages here: https://sensoftinc.github.io/spidar-sdk
+The API reference documentation is hosted on [GitHub pages](https://sensoftinc.github.io/spidar-sdk).
 
 ## Setup 
 
@@ -44,7 +44,7 @@ details on how to update the name of the Python executable.
 
     ```creator CPython3Windows(dest=C:\Users\${USERNAME}\nic-sdk, clear=False, no_vcs_ignore=False, global=False)```
 
-    Replace PATH_TO_ENV to the path of your environment (for me it was C:\Users\${USERNAME}\nic-sdk). 
+    Replace PATH_TO_ENV to the path of your environment (i.e. `C:\Users\${USERNAME}\nic-sdk`). 
 
     ```cd ${PATH_TO_ENV}```
 
