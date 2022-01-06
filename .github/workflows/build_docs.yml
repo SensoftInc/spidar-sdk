@@ -3,13 +3,11 @@
 name: Build and deploy spidar-sdk documentation
 
 on:
-  push:
-    branches:
-      - main
-      - dev-testing
-
   workflow_dispatch:
-
+      push:
+        branches:
+          - main
+          - dev-testing
 jobs:
 
   build:
