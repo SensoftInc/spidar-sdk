@@ -31,7 +31,7 @@ The script performs the following steps:
 
 7. Start acquisition.
 8. Print trace headers and the first 10 points of any trace that arrives.
-9. Wait for 50 traces, then reset the data socket and reconnect to it
+9. Wait for 50 traces, reset the data socket and reconnect to it and collect 50 more traces. 
 10. Stop acquisition.
 11. Close the data socket.
 
