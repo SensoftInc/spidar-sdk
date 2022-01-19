@@ -131,4 +131,4 @@ Uniform Resource Locator (URL)
 ==============================
 
 Address of a URI including the protocol identifier. For example, "http://192.168.20.221:8080/api/nic" is the
-URL, "nic" is the URI.
+URL, "nic" is the URI. The SPIDAR SDK API is hosted on port 8080, so it must be included in the URL.
