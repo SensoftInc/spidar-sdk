@@ -44,3 +44,41 @@ jobs:
         with:
           name: spidar-sdk
           path: docs/_build/latex/spidarsdk.pdf
+
+  create_release:
+    
+    name: Release notes
+    runs-on: ubuntu-latest
+    needs: [ build ]
+#     if: github.ref == 'refs/heads/working'
+
+    steps:
+    
+      - name: Download artifact
+        uses: actions/download-artifact@v2
+        with:
+          name: spidar-sdk-artifact
+          
+      - name: Create archive
+        # Lock release at head of the master branch as of 2021-12-09
+        uses: thedoctor0/zip-release@4fb9e4ff72847dd3d1c111cf63834e353ed7cb3d
+        with:
+          type: zip
+          filename: spidarsdkv1.0.${{ github.run_number }}.zip
+          
+      - name: Echo folder contents
+        run: |
+          ls -al 
+          
+#       - name: Create Release
+#         # Lock release a head of the master branch as of 2021-12-09
+#         uses: marvinpinto/action-automatic-releases@4edd7a5aabb1bc62e6dc99b3302d587bf3134e20
+#         with:
+#           repo_token: "${{ secrets.GITHUB_TOKEN }}"
+#           automatic_release_tag: "v1.0.${{ github.run_number }}"
+#           prerelease: true
+#           title: "SPIDAR SDK v1.0.${{ github.run_number }}"
+#           files: |
+#             SPIDAR-SDKv1.0.${{ github.run_number }}.zip
+          
+    
