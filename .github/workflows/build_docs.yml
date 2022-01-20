@@ -65,6 +65,7 @@ jobs:
         with:
           repo_token: "${{ secrets.GITHUB_TOKEN }}"
           automatic_release_tag: "v1.0.${{ github.run_number }}"
+          prerelease: false
           title: "SPIDAR SDK v1.0.${{ github.run_number }}"
           files: |
             spidarsdk.pdf
