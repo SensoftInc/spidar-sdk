@@ -1,0 +1,115 @@
+This Software Development Kit Agreement (this "Agreement") governs the access to and use of the SPIDAR Software
+Development Kit (“SPIDAR SDK”), including any application programming interface included, provided by Sensors and
+Software (“Company”) to the you, the user (“User”). This is a legally binding contract between the User and the Company.
+
+By accessing or using the SPIDAR SDK through the use of the Activation Key, the User (a) acknowledge that the User has
+read and understands this Agreement; (b) represent and warrants that the User has the right, power, and authority to
+enter into this Agreement; (c) if the User is agreeing to be bound by the Agreement on behalf of the User’s employer or
+other entity, the User represents and warrants that the User has full legal authority to bind the User’s employer or
+such entity to the Agreement; and (d) accepts this Agreement and agrees that the User is legally bound by its terms. If
+the User do not accept these terms or does not have the requisite authority, the User may not access or use the SPIDAR
+SDK.
+
+1. Access and Use. 
+
+    Subject to and conditioned on the User’s compliance with all terms and conditions set forth in this
+    Agreement, the User is granted, by virtue of its purchase of the Activation Key, a limited, revocable, non-exclusive,
+    non-transferable right to access and use the SPIDAR SDK solely for the purposes of configuring the firmware in
+    accordance with the SPIDAR SDK documentation provided together with the Activation Key (“Documentation”).
+
+2. Ownership.
+   
+   The User acknowledges and agrees that, as between the parties, the Company owns all right, title, and
+   interest in and to the SPIDAR SDK and/or the associated products and/or software. For the avoidance of doubt, the
+   User agrees that the terms and conditions of sale governing the purchase of any products and/or software and/or
+   services from the Company (“Products and/or Services”) shall, to the extent applicable, apply.
+
+3. Confidential Information.
+
+    3.1.  Confidential Information means all secret or confidential information, knowledge, know-how, technical information
+    and/or data relating to the Company and/or its products and/or services including but not limited to the Documentation
+    and the SPIDAR SDK.
+
+    3.2. The User will not use or disclose any Confidential Information, except as necessary for the exercise of its rights
+    under this Agreement. User will use all reasonable efforts to protect Confidential Information from unauthorized use or
+    disclosure, but in no event less than the efforts that it ordinarily uses with respect to its own confidential
+    information of similar importance. The User may disclose Confidential Information only to those of its employees and
+    contractors who need to know such Confidential Information for the exercise of User’s rights under this Agreement;
+    provided, that each such employee and contractor first is bound by a written agreement that contains use and
+    nondisclosure restrictions at least as protective of the Confidential Information as those set forth in this Agreement.
+
+4. Warranties.
+
+    4.1. Company warrants the User that the SPIDAR SDK will operate in substantial conformity with the Documentation. The
+    Company does not warrant that User’s use of the SPIDAR SDK will be error-free. The Company’s sole liability (and User’s
+    exclusive remedy) for any breach of this warranty will be, to use commercially reasonable efforts to provide User with
+    an error-correction or work-around which corrects the reported non-conformity. The above warranty will not apply: (a) if
+    the SPIDAR SDK is used with hardware or software not specified in the Documentation; (b) if any modifications are made
+    to the Products and/or Services by User or any third party; (c) to defects is due to accident, abuse or improper use of
+    the Product and/or Services by User.
+
+    4.2. Except as expressly provided in this agreement, the Company furnishes, and the User accepts, the SPIDAR SDK and
+    proprietary information as-is, with no representations, conditions, warranties or terms, express or implied, by statute,
+    common law or otherwise, regarding the SPIDAR SDK and proprietary information, their fitness for a particular purpose,
+    merchantability, satisfactory quality, title, non-infringement, or otherwise, to User, User’s end users or any third
+    party. To the maximum extent permitted by law, the stated express warranties are in lieu of all obligations or
+    liabilities on the part of the Company arising out of, or in connection with, any Company product or proprietary
+    information.
+
+    4.3. In connection with User’s activities under this Agreement, including, the extent as may be applicable, the User’s
+    distribution of the Product and/or Services incorporated in its own products and/or services (“Applications”) to end
+    users, the User shall, in a manner that protects both the Company and the User, (i) disclaim liability and implied
+    warranties to the same extent disclaimed by the Company under this Agreement, and (ii) make no warranty or
+    representation binding upon the Company.
+
+5. Limitation of Liability.
+
+    5.1. In no event shall either party or its suppliers be liable for any special, incidental, indirect or consequential or
+    punitive damages, however caused and regardless of the theory of liability (including damages for loss of business
+    profits, business interruption, loss of business information, or any other pecuniary loss) relating in any way to this
+    Agreement, the SPIDAR SDK, object code, proprietary information, or the commercial relationship of the parties,
+    regardless of whether the parties have been advised of the possibility of any such loss and regardless of the course of
+    dealing which develops or has developed between the parties.
+
+    5.2. The foregoing limitations will apply even if the above stated warranties fail of their essential purpose.
+
+6. Indemnity.
+
+    6.1. The Company shall defend, indemnify and hold harmless the User from and against any all third-party claims,
+    liabilities, damages or expenses (including reasonable attorney’s fees) in connection with or which result from a claim
+    of infringement of a U.S. patent, U.S. copyright, or U.S. trademark asserted against the User by a third party based
+    upon User’s use of the SPIDAR SDK in accordance with the terms of this Agreement. If User’s use of any of the SPIDAR SDK
+    is enjoined due to the type of infringement specified above, or if required by settlement, the Company may, in its sole
+    discretion: (a) substitute for the SPIDAR SDK substantially functionally similar programs and documentation; (b) procure
+    for User the right to continue using the SPIDAR SDK; or if (a) and (b) are commercially impracticable, (c) terminate the
+    Agreement. The foregoing indemnification obligation of Company will not apply: (1) if the SPIDAR SDK is modified by the
+    User or its subcontractors; (2) if the SPIDAR SDK is combined with other non- Company products (including the
+    Application), but solely to the extent that the alleged infringement is caused by such combination; (3) to any
+    unauthorized use of the SPIDAR SDK; (4) to any unsupported release of the SPIDAR SDK by the User.
+
+   6.2. User shall defend, indemnify and hold harmless the Company from and against any and all third-party claims,
+    liabilities, damages or expenses (including reasonable attorney’s fees) in connection with or which result from (i) any
+    claim of infringement of a third party’s intellectual property rights with respect to any Applications.
+
+   6.3. This section sets forth each party’s and its suppliers’ sole liability and the other party’s sole and exclusive
+    remedy with respect to any claim of intellectual property infringement.
+
+7. General.
+
+    7.1. The Agreement shall be governed by and construed in accordance with the laws of the Province of Ontario and the
+    federal laws of Canada applicable in the Province of Ontario and shall be treated, in all respects as an Ontario
+    contract. Each Party to this transaction irrevocably submits to the jurisdiction of the Courts of Ontario with respect
+    to any matter arising under or relating to this Agreement.
+
+    7.2. The waiver of a breach of any term or condition of the Agreement will not constitute the waiver of any other breach
+    of the same or any other term. To be enforceable, a waiver must be in writing signed by a duly authorized representative
+    of the waiving party. If any provision of the Agreement is held to be unenforceable, the remaining provisions will
+    remain in effect and the parties will negotiate in good faith a substantively comparable enforceable provision to
+    replace the unenforceable provision.
+
+    7.3. This Agreement may be executed in two or more counterparts, each of which will be deemed an original but all of
+    which together will constitute one and the same instrument.
+
+    7.4. Customer agrees that it shall not disclose to any third party any Confidential Information pertaining to the
+    Products and/or Services provided hereunder.
+

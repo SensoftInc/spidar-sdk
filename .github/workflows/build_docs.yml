@@ -1,21 +1,72 @@
-# Workflow to build documentation
+# Workflow to build and publish documentation
 
-name: Build documentation
+name: Build and deploy spidar-sdk documentation
 
-# Controls when the workflow will run
 on:
-  # Triggers the workflow on push request events 
-  push:
-
   workflow_dispatch:
-
+    
+  push:
+    branches:
+      - main
 jobs:
 
   build:
 
+    name: Build and deploy docs
     runs-on: ubuntu-latest
-
+    
     steps:
           
       - name: Clone repo
         uses: actions/checkout@v2
+
+      - name: Build Sphinx documentation as a pdf
+        uses: ax3l/sphinx-action@31d7bf8fecdb2ef0315d87487bf6b2ab17869b4a
+        with:
+          docs-folder: "docs/"
+          pre-build-command: "apt-get update -y && apt-get install -y latexmk texlive-latex-recommended texlive-latex-extra texlive-fonts-recommended"
+          build-command: "make latexpdf"
+
+      - name: Build Sphinx documentation into html
+        uses: ammaraskar/sphinx-action@35082eb35b69713fe335801c4d5846a4cc3c91ff
+        with:
+          docs-folder: "docs/"
+
+      - name: Deploy to github pages
+        uses: peaceiris/actions-gh-pages@v3
+        if: github.ref == 'refs/heads/main'
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: docs/_build/html
+
+      - name: Upload pdf 
+        uses: actions/upload-artifact@v1
+        with:
+          name: spidar-sdk
+          path: docs/_build/latex/spidarsdk.pdf
+
+  create_release:
+    
+    name: Release notes
+    runs-on: ubuntu-latest
+    needs: [ build ]
+    if: github.ref == 'refs/heads/main'
+
+    steps:
+    
+      - name: Download artifact
+        uses: actions/download-artifact@v2
+        with:
+          name: spidar-sdk
+          
+      - name: Create Release Notes
+        # Lock release a head of the master branch as of 2021-12-09
+        uses: marvinpinto/action-automatic-releases@4edd7a5aabb1bc62e6dc99b3302d587bf3134e20
+        with:
+          repo_token: "${{ secrets.GITHUB_TOKEN }}"
+          automatic_release_tag: "v1.0.${{ github.run_number }}"
+          title: "SPIDAR SDK v1.0.${{ github.run_number }}"
+          files: |
+            spidarsdk.pdf
+          
+    
