@@ -1,0 +1,503 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" />
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  
+  <title>Setup &mdash; SPIDAR SDK  documentation</title>
+  
+
+  
+  <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="_static/tabs.css" type="text/css" />
+
+  
+  
+
+  
+  
+
+  
+
+  
+  <!--[if lt IE 9]>
+    <script src="_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+        <script src="_static/jquery.js"></script>
+        <script src="_static/underscore.js"></script>
+        <script src="_static/doctools.js"></script>
+        <script src="_static/language_data.js"></script>
+        <script src="_static/tabs.js"></script>
+    
+    <script type="text/javascript" src="_static/js/theme.js"></script>
+
+    
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Acquisition" href="nic_acquisition.html" />
+    <link rel="prev" title="Power" href="nic_power.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="index.html" class="icon icon-home"> SPIDAR SDK
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <ul>
+<li class="toctree-l1"><a class="reference internal" href="terms_and_conditions.html">Terms &amp; Conditions For Use</a></li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="glossary.html">Glossary</a></li>
+</ul>
+<ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="nic.html">NIC</a><ul class="current">
+<li class="toctree-l2 current"><a class="reference internal" href="nic.html#resources">Resources</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="nic_date_time.html">Date and Time</a></li>
+<li class="toctree-l3"><a class="reference internal" href="nic_system_info.html">System Information</a></li>
+<li class="toctree-l3"><a class="reference internal" href="nic_status.html">Status</a></li>
+<li class="toctree-l3"><a class="reference internal" href="nic_power.html">Power</a></li>
+<li class="toctree-l3 current"><a class="current reference internal" href="#">Setup</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#attributes">Attributes</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#read-the-setup">Read the setup</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#change-the-setup">Change the setup</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#gpr-parameter-ranges">GPR Parameter Ranges</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#errors">Errors</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#warnings">Warnings</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="nic_acquisition.html">Acquisition</a></li>
+<li class="toctree-l3"><a class="reference internal" href="gpr.html">GPR</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="gpr.html">GPR</a></li>
+</ul>
+
+            
+          
+        </div>
+        
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">SPIDAR SDK</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="index.html" class="icon icon-home"></a> &raquo;</li>
+        
+          <li><a href="nic.html">NIC</a> &raquo;</li>
+        
+      <li>Setup</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+          
+            <a href="_sources/nic_setup.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="setup">
+<span id="nic-setup-label"></span><h1>Setup<a class="headerlink" href="#setup" title="Permalink to this headline">¶</a></h1>
+<p>This resource allows the client to get or set the configuration of devices connected to the NIC.</p>
+<table class="colwidths-given docutils align-default">
+<colgroup>
+<col style="width: 25%" />
+<col style="width: 75%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p>Resource</p></td>
+<td><p>api/nic/setup</p></td>
+</tr>
+<tr class="row-even"><td><p>Returns</p></td>
+<td><p>gpr and timer parameter structure</p></td>
+</tr>
+<tr class="row-odd"><td><p>Supported methods</p></td>
+<td><ul class="simple">
+<li><p>GET: Read the parameter structure from all connected devices.</p></li>
+<li><p>PUT: Set the parameter structure for any or all connected devices.</p></li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+<div class="section" id="attributes">
+<h2>Attributes<a class="headerlink" href="#attributes" title="Permalink to this headline">¶</a></h2>
+<table class="colwidths-given docutils align-default">
+<colgroup>
+<col style="width: 25%" />
+<col style="width: 25%" />
+<col style="width: 50%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>Field</p></th>
+<th class="head"><p>Type</p></th>
+<th class="head"><p>Description</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>timer</p></td>
+<td><p>timer parameter structure</p></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p>period_s</p></td>
+<td><p>float</p></td>
+<td><p>Interval between trigger events when the GPR trigger mode is set to “Free”.</p></td>
+</tr>
+<tr class="row-even"><td><p>gpr0</p></td>
+<td><p>gpr0 parameter structure</p></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p>points_per_trace</p></td>
+<td><p>integer</p></td>
+<td><p>Number of sample points to collect per trace.</p></td>
+</tr>
+<tr class="row-even"><td><p>time_sampling_interval_ps</p></td>
+<td><p>integer</p></td>
+<td><p>The time interval between sample points on a trace.</p></td>
+</tr>
+<tr class="row-odd"><td><p>frequency_MHz</p></td>
+<td><p>float</p></td>
+<td><p>The centre frequency of the GPR transmitting and receiving antenna.</p></td>
+</tr>
+<tr class="row-even"><td><p>point_stacks</p></td>
+<td><p>integer</p></td>
+<td><p>Point stacks are collected at the receiver. Must be a power of 2, between 1 and 32768.</p></td>
+</tr>
+<tr class="row-odd"><td><p>trigger_mode</p></td>
+<td><p>string</p></td>
+<td><p>Method used for triggering GPR trace acquisition. Must be “Free” or “Pulse”.</p></td>
+</tr>
+<tr class="row-even"><td><p>window_time_shift_ps</p></td>
+<td><p>integer</p></td>
+<td><p>Offset used to position the receiver’s recording window within range of the transmitter pulse. For monostatic
+GPRs, the window time shift reference is the calibrated value necessary to place first break at point 1 on the
+trace.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="read-the-setup">
+<h2>Read the setup<a class="headerlink" href="#read-the-setup" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="sample-request">
+<h3>Sample request<a class="headerlink" href="#sample-request" title="Permalink to this headline">¶</a></h3>
+<div class="sphinx-tabs docutils container">
+<div aria-label="Tabbed content" class="closeable" role="tablist"><button aria-controls="panel-0-UHl0aG9u" aria-selected="true" class="sphinx-tabs-tab code-tab group-tab" id="tab-0-UHl0aG9u" name="UHl0aG9u" role="tab" tabindex="0">Python</button><button aria-controls="panel-0-Y3VybA==" aria-selected="false" class="sphinx-tabs-tab code-tab group-tab" id="tab-0-Y3VybA==" name="Y3VybA==" role="tab" tabindex="-1">curl</button></div><div aria-labelledby="tab-0-UHl0aG9u" class="sphinx-tabs-panel code-tab group-tab" id="panel-0-UHl0aG9u" name="UHl0aG9u" role="tabpanel" tabindex="0"><div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">response</span> <span class="o">=</span> <span class="n">requests</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s2">&quot;http://192.168.20.221:8080/api/nic/setup&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div><div aria-labelledby="tab-0-Y3VybA==" class="sphinx-tabs-panel code-tab group-tab" hidden="true" id="panel-0-Y3VybA==" name="Y3VybA==" role="tabpanel" tabindex="0"><div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="go">curl http://192.168.20.221:8080/api/nic/setup</span>
+</pre></div>
+</div>
+</div></div>
+</div>
+<div class="section" id="sample-response-data">
+<h3>Sample response data<a class="headerlink" href="#sample-response-data" title="Permalink to this headline">¶</a></h3>
+<div class="highlight-json notranslate"><div class="highlight"><pre><span></span><span class="p">{</span>
+    <span class="nt">&quot;data&quot;</span><span class="p">:</span> <span class="p">{</span>
+    <span class="nt">&quot;timer&quot;</span><span class="p">:</span> <span class="p">{</span>
+        <span class="nt">&quot;parameters&quot;</span><span class="p">:</span> <span class="p">{</span>
+            <span class="nt">&quot;period_s&quot;</span><span class="p">:</span> <span class="mi">1</span>
+        <span class="p">}</span>
+    <span class="p">},</span>
+    <span class="nt">&quot;gpr0&quot;</span><span class="p">:</span> <span class="p">{</span>
+        <span class="nt">&quot;parameters&quot;</span><span class="p">:</span> <span class="p">{</span>
+            <span class="nt">&quot;time_sampling_interval_ps&quot;</span><span class="p">:</span> <span class="mi">100</span><span class="p">,</span>
+            <span class="nt">&quot;frequency_MHz&quot;</span><span class="p">:</span> <span class="mi">1000</span><span class="p">,</span>
+            <span class="nt">&quot;point_stacks&quot;</span><span class="p">:</span> <span class="mi">4</span><span class="p">,</span>
+            <span class="nt">&quot;trigger_mode&quot;</span><span class="p">:</span> <span class="s2">&quot;Free&quot;</span><span class="p">,</span>
+            <span class="nt">&quot;window_time_shift_ps&quot;</span><span class="p">:</span> <span class="mi">-37000</span><span class="p">,</span>
+            <span class="nt">&quot;points_per_trace&quot;</span><span class="p">:</span> <span class="mi">200</span>
+        <span class="p">}</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="section" id="change-the-setup">
+<h2>Change the setup<a class="headerlink" href="#change-the-setup" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="id1">
+<h3>Sample request<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h3>
+<div class="sphinx-tabs docutils container">
+<div aria-label="Tabbed content" class="closeable" role="tablist"><button aria-controls="panel-1-UHl0aG9u" aria-selected="true" class="sphinx-tabs-tab code-tab group-tab" id="tab-1-UHl0aG9u" name="UHl0aG9u" role="tab" tabindex="0">Python</button><button aria-controls="panel-1-Y3VybA==" aria-selected="false" class="sphinx-tabs-tab code-tab group-tab" id="tab-1-Y3VybA==" name="Y3VybA==" role="tab" tabindex="-1">curl</button></div><div aria-labelledby="tab-1-UHl0aG9u" class="sphinx-tabs-panel code-tab group-tab" id="panel-1-UHl0aG9u" name="UHl0aG9u" role="tabpanel" tabindex="0"><div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">configuration</span> <span class="o">=</span> <span class="n">json</span><span class="o">.</span><span class="n">dumps</span><span class="p">({</span><span class="s2">&quot;gpr0&quot;</span><span class="p">:</span> <span class="p">{</span><span class="s2">&quot;parameters&quot;</span><span class="p">:</span> <span class="p">{</span><span class="s2">&quot;points_per_trace&quot;</span><span class="p">:</span> <span class="mi">200</span><span class="p">,</span> <span class="s2">&quot;point_stacks&quot;</span><span class="p">:</span> <span class="mi">32</span><span class="p">}},</span> <span class="s2">&quot;timer&quot;</span><span class="p">:</span> <span class="p">{</span><span class="s2">&quot;parameters&quot;</span><span class="p">:</span> <span class="p">{</span><span class="s2">&quot;period_s&quot;</span><span class="p">:</span> <span class="mf">0.1</span><span class="p">}}})</span>
+<span class="n">response</span> <span class="o">=</span> <span class="n">requests</span><span class="o">.</span><span class="n">put</span><span class="p">(</span><span class="s2">&quot;http://192.168.20.221:8080/api/smc/setup&quot;</span><span class="p">,</span> <span class="n">data</span><span class="o">=</span><span class="p">{</span><span class="s2">&quot;data&quot;</span><span class="p">:</span> <span class="n">configuration</span><span class="p">})</span>
+</pre></div>
+</div>
+</div><div aria-labelledby="tab-1-Y3VybA==" class="sphinx-tabs-panel code-tab group-tab" hidden="true" id="panel-1-Y3VybA==" name="Y3VybA==" role="tabpanel" tabindex="0"><div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="go">curl -X PUT --data-urlencode &quot;data={\&quot;gpr0\&quot;: {\&quot;point_stacks\&quot;: 2048}}&quot; http://192.168.20.221:8080/api/smc/setup</span>
+</pre></div>
+</div>
+</div></div>
+</div>
+<div class="section" id="sample-response">
+<h3>Sample response<a class="headerlink" href="#sample-response" title="Permalink to this headline">¶</a></h3>
+<div class="highlight-json notranslate"><div class="highlight"><pre><span></span><span class="p">{</span>
+    <span class="nt">&quot;data&quot;</span><span class="p">:</span> <span class="p">{</span>
+    <span class="nt">&quot;timer&quot;</span><span class="p">:</span> <span class="p">{</span>
+        <span class="nt">&quot;parameters&quot;</span><span class="p">:</span> <span class="p">{</span>
+          <span class="nt">&quot;period_s&quot;</span><span class="p">:</span> <span class="mf">0.1</span>
+        <span class="p">}</span>
+    <span class="p">},</span>
+    <span class="nt">&quot;gpr0&quot;</span><span class="p">:</span> <span class="p">{</span>
+        <span class="nt">&quot;parameters&quot;</span><span class="p">:</span> <span class="p">{</span>
+            <span class="nt">&quot;time_sampling_interval_ps&quot;</span><span class="p">:</span> <span class="mi">100</span><span class="p">,</span>
+            <span class="nt">&quot;frequency_MHz&quot;</span><span class="p">:</span> <span class="mi">1000</span><span class="p">,</span>
+            <span class="nt">&quot;point_stacks&quot;</span><span class="p">:</span> <span class="mi">32</span><span class="p">,</span>
+            <span class="nt">&quot;trigger_mode&quot;</span><span class="p">:</span> <span class="s2">&quot;Free&quot;</span><span class="p">,</span>
+            <span class="nt">&quot;window_time_shift_ps&quot;</span><span class="p">:</span> <span class="mi">-37000</span><span class="p">,</span>
+            <span class="nt">&quot;points_per_trace&quot;</span><span class="p">:</span> <span class="mi">200</span>
+        <span class="p">}</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="section" id="gpr-parameter-ranges">
+<h2>GPR Parameter Ranges<a class="headerlink" href="#gpr-parameter-ranges" title="Permalink to this headline">¶</a></h2>
+<table class="colwidths-given docutils align-default">
+<colgroup>
+<col style="width: 25%" />
+<col style="width: 10%" />
+<col style="width: 13%" />
+<col style="width: 10%" />
+<col style="width: 42%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>Parameter</p></th>
+<th class="head"><p>Default</p></th>
+<th class="head"><p>Min</p></th>
+<th class="head"><p>Max</p></th>
+<th class="head"><p>Resolution</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>points_per_trace</p></td>
+<td><p>100</p></td>
+<td><p>70</p></td>
+<td><p>30000</p></td>
+<td><p>1</p></td>
+</tr>
+<tr class="row-odd"><td><p>time_sampling_interval_ps</p></td>
+<td><p>100</p></td>
+<td><p>50</p></td>
+<td><p>6400</p></td>
+<td><p>50</p></td>
+</tr>
+<tr class="row-even"><td><p>point_stacks</p></td>
+<td><p>1</p></td>
+<td><p>1</p></td>
+<td><p>32768</p></td>
+<td><p>One of [1, 2, 4, 6, 8, 16, 32, 64, 128, 256, 512, 1024, 2048, 4096, 8192, 16384, 32768]</p></td>
+</tr>
+<tr class="row-odd"><td><p>window_time_shift_ps</p></td>
+<td><p>-48000</p></td>
+<td><p>-50000000</p></td>
+<td><p>50000000</p></td>
+<td><p>5</p></td>
+</tr>
+<tr class="row-even"><td><p>trigger_mode</p></td>
+<td><p>“Free”</p></td>
+<td><p>n/a</p></td>
+<td><p>n/a</p></td>
+<td><p>One of [“Free”, “Pulse”, 0, 3]</p></td>
+</tr>
+<tr class="row-odd"><td><p>period_s</p></td>
+<td><p>1</p></td>
+<td><p>0.00125</p></td>
+<td><p>60</p></td>
+<td><p>any</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="errors">
+<h2>Errors<a class="headerlink" href="#errors" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="value-out-of-range">
+<h3>Value Out of Range<a class="headerlink" href="#value-out-of-range" title="Permalink to this headline">¶</a></h3>
+<p>(Status Code: 0008)</p>
+<p>This status code is returned for any of the following reasons:</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>One or more parameters are out of the defined range.</p></li>
+<li><p>An input parameter is outside the allowed range of values.</p></li>
+<li><p>The input combination of points_per_trace and time_sampling_interval_ps result in a time_window outside the
+allowed range.</p></li>
+</ul>
+</div></blockquote>
+</div>
+<div class="section" id="invalid-input-parameter-format">
+<h3>Invalid Input Parameter Format<a class="headerlink" href="#invalid-input-parameter-format" title="Permalink to this headline">¶</a></h3>
+<p>(Status Code: 0011)</p>
+<p>This status code is returned for any of the following reasons:</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>When the input parameter is not in a JSON readable format.</p></li>
+<li><p>When either the input timer or the gpr doesn’t contain a “parameters” key.</p></li>
+</ul>
+</div></blockquote>
+</div>
+<div class="section" id="gpr-not-powered">
+<h3>GPR Not Powered<a class="headerlink" href="#gpr-not-powered" title="Permalink to this headline">¶</a></h3>
+<p>(Status Code: 4001)</p>
+<p>The connected GPR device is not powered on.</p>
+</div>
+<div class="section" id="gpr-already-running">
+<h3>GPR Already Running<a class="headerlink" href="#gpr-already-running" title="Permalink to this headline">¶</a></h3>
+<p>(Status Code: 4004)</p>
+<p>The connected GPR device is currently acquiring data and must be stopped before running setup.</p>
+</div>
+</div>
+<div class="section" id="warnings">
+<h2>Warnings<a class="headerlink" href="#warnings" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="unrecognized-input">
+<h3>Unrecognized Input<a class="headerlink" href="#unrecognized-input" title="Permalink to this headline">¶</a></h3>
+<p>(Status Code: 912)</p>
+<p>This warning is returned if any of the input parameters were unrecognized and as a result did not apply any changes to
+the system.</p>
+</div>
+<div class="section" id="modified-input">
+<h3>Modified Input<a class="headerlink" href="#modified-input" title="Permalink to this headline">¶</a></h3>
+<p>(Status Code: 913)</p>
+<p>This warning is returned when an input value is not in the proper resolution. The input value will be rounded to the
+closest valid value and accepted.</p>
+</div>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+        <a href="nic_acquisition.html" class="btn btn-neutral float-right" title="Acquisition" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+        <a href="nic_power.html" class="btn btn-neutral float-left" title="Power" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &#169; Copyright Sensors &amp; Software Inc.
+
+    </p>
+  </div>
+    
+    
+    
+    Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    
+    provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

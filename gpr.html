@@ -1,0 +1,383 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" />
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  
+  <title>GPR &mdash; SPIDAR SDK  documentation</title>
+  
+
+  
+  <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="_static/tabs.css" type="text/css" />
+
+  
+  
+
+  
+  
+
+  
+
+  
+  <!--[if lt IE 9]>
+    <script src="_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+        <script src="_static/jquery.js"></script>
+        <script src="_static/underscore.js"></script>
+        <script src="_static/doctools.js"></script>
+        <script src="_static/language_data.js"></script>
+    
+    <script type="text/javascript" src="_static/js/theme.js"></script>
+
+    
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="System Information" href="gpr_system_info.html" />
+    <link rel="prev" title="Acquisition" href="nic_acquisition.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="index.html" class="icon icon-home"> SPIDAR SDK
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <ul>
+<li class="toctree-l1"><a class="reference internal" href="terms_and_conditions.html">Terms &amp; Conditions For Use</a></li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="glossary.html">Glossary</a></li>
+</ul>
+<ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="nic.html">NIC</a><ul class="current">
+<li class="toctree-l2 current"><a class="reference internal" href="nic.html#resources">Resources</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="nic_date_time.html">Date and Time</a></li>
+<li class="toctree-l3"><a class="reference internal" href="nic_system_info.html">System Information</a></li>
+<li class="toctree-l3"><a class="reference internal" href="nic_status.html">Status</a></li>
+<li class="toctree-l3"><a class="reference internal" href="nic_power.html">Power</a></li>
+<li class="toctree-l3"><a class="reference internal" href="nic_setup.html">Setup</a></li>
+<li class="toctree-l3"><a class="reference internal" href="nic_acquisition.html">Acquisition</a></li>
+<li class="toctree-l3 current"><a class="current reference internal" href="#">GPR</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#resources">Resources</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#data-format">Data Format</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">GPR</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#resources">Resources</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="gpr_system_info.html">System Information</a></li>
+<li class="toctree-l3"><a class="reference internal" href="gpr_data_socket.html">Data Socket</a></li>
+<li class="toctree-l3"><a class="reference internal" href="gpr_data_socket_reset.html">Data Socket Reset</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#data-format">Data Format</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#field-list">Field list</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#time-stamp">Time stamp</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#trace-number">Trace number</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#status">Status</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#stacks">Stacks</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#header-size">Header size</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#data">Data</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+            
+          
+        </div>
+        
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">SPIDAR SDK</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="index.html" class="icon icon-home"></a> &raquo;</li>
+        
+          <li><a href="nic.html">NIC</a> &raquo;</li>
+        
+      <li>GPR</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+          
+            <a href="_sources/gpr.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="gpr">
+<h1>GPR<a class="headerlink" href="#gpr" title="Permalink to this headline">¶</a></h1>
+<p>This resource retrieves a list of available resources from the GPR. The GPR is a sub-resource of the NIC. The GPR
+resource is limited to retrieving system information such as serial and version numbers, and control of the data
+socket over which trace data are sent.</p>
+<table class="colwidths-given docutils align-default">
+<colgroup>
+<col style="width: 25%" />
+<col style="width: 75%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p>Resource</p></td>
+<td><p>api/nic/gpr</p></td>
+</tr>
+<tr class="row-even"><td><p>Returns</p></td>
+<td><p>List of resources associated with the GPR.</p></td>
+</tr>
+<tr class="row-odd"><td><p>Supported methods</p></td>
+<td><ul class="simple">
+<li><p>GET: Retrieve a list of resources</p></li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+<div class="section" id="resources">
+<h2>Resources<a class="headerlink" href="#resources" title="Permalink to this headline">¶</a></h2>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="gpr_system_info.html">System Information</a></li>
+<li class="toctree-l1"><a class="reference internal" href="gpr_data_socket.html">Data Socket</a></li>
+<li class="toctree-l1"><a class="reference internal" href="gpr_data_socket_reset.html">Data Socket Reset</a></li>
+</ul>
+</div>
+</div>
+<div class="section" id="data-format">
+<h2>Data Format<a class="headerlink" href="#data-format" title="Permalink to this headline">¶</a></h2>
+<p>The GPR data are sent in trace format, each trace contains a header with information about the trace, and a data portion
+with the amplitude information received by the GPR. Data transmitted across the network is broken up to optimize
+transfer speeds, and may not always be whole traces. When reading data from the socket, the client must know the
+expected size of traces in bytes to ensure all the data is read. The size of a single trace is computed as:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">trace_size_in_bytes</span> <span class="o">=</span> <span class="n">points_per_trace</span> <span class="o">*</span> <span class="n">bytes_per_point</span> <span class="o">+</span> <span class="n">trace_header_size_in_bytes</span>
+</pre></div>
+</div>
+<p>where:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">trace_header_size_in_bytes</span> <span class="o">=</span> <span class="mi">20</span>
+<span class="n">bytes_per_point</span> <span class="o">=</span> <span class="mi">4</span>
+</pre></div>
+</div>
+<div class="section" id="field-list">
+<h3>Field list<a class="headerlink" href="#field-list" title="Permalink to this headline">¶</a></h3>
+<table class="colwidths-given docutils align-default">
+<colgroup>
+<col style="width: 18%" />
+<col style="width: 27%" />
+<col style="width: 55%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>Field</p></th>
+<th class="head"><p>Type</p></th>
+<th class="head"><p>Description</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>tv_sec</p></td>
+<td><p>integer (4 byte)</p></td>
+<td><p>Integer component of the Linux timespec, in seconds.</p></td>
+</tr>
+<tr class="row-odd"><td><p>tv_nsec</p></td>
+<td><p>integer (4 byte)</p></td>
+<td><p>Fractional component of the Linux timespec, in nanoseconds.</p></td>
+</tr>
+<tr class="row-even"><td><p>trace_number</p></td>
+<td><p>integer (4 byte)</p></td>
+<td><p>Sequential number assigned to the trace since the last reset.</p></td>
+</tr>
+<tr class="row-odd"><td><p>status</p></td>
+<td><p>integer (2 byte)</p></td>
+<td><p>Bitwise status flags.</p></td>
+</tr>
+<tr class="row-even"><td><p>header_size</p></td>
+<td><p>unsigned integer (2 byte)</p></td>
+<td><p>Size of the header in bytes.</p></td>
+</tr>
+<tr class="row-odd"><td><p>data</p></td>
+<td><p>array of float (4 byte)</p></td>
+<td><p>Amplitude data presented in mV.</p></td>
+</tr>
+</tbody>
+</table>
+<div class="section" id="time-stamp">
+<h4>Time stamp<a class="headerlink" href="#time-stamp" title="Permalink to this headline">¶</a></h4>
+<p>The trace time stamp is presented in Linux timespec format, with a seconds and nanoseconds field. The time is measured
+from Jan 1 1970 00:00 UTC, and is stored in the NIC-500’s real-time clock between boot cycles. The clock can read or
+set using the date_time API resource. The trace is stamped at the time of request, and so does not take into account
+time take to acquire the trace.</p>
+<p>To convert the time stamp to seconds past Jan 1 1970 00:00 UTC: tv_sec + tv_nsec / 1e9</p>
+</div>
+<div class="section" id="trace-number">
+<h4>Trace number<a class="headerlink" href="#trace-number" title="Permalink to this headline">¶</a></h4>
+<p>The trace numbering starts at 1, and counts up sequentially for each trace requested. To reset the trace number back
+to one, the PUT method must be requested successfully on the API’s nic/setup resource. Once a trace has started
+collecting it cannot be interrupted. If a new request is made while trace acquisition is happening, the new request
+will be ‘skipped’ the trace number field will appear to have a gap. For instance, if a new trace request is made
+while trace 5 is still being acquired, the incoming trace numbers will look like: [1, 2, 4, 4, 5, 7, 8…]. The system
+will skip as many traces as necessary while acquisition is going on.</p>
+</div>
+<div class="section" id="status">
+<h4>Status<a class="headerlink" href="#status" title="Permalink to this headline">¶</a></h4>
+<p>The status field is not used in SPIDAR SDK.</p>
+</div>
+<div class="section" id="stacks">
+<h4>Stacks<a class="headerlink" href="#stacks" title="Permalink to this headline">¶</a></h4>
+<p>Indicates the number of stacks, or measurements used to average the trace. The stacks field should match the
+point_stacks setting supplied to the <a class="reference internal" href="nic_setup.html#nic-setup-label"><span class="std std-ref">Setup</span></a> resource.</p>
+</div>
+<div class="section" id="header-size">
+<h4>Header size<a class="headerlink" href="#header-size" title="Permalink to this headline">¶</a></h4>
+<p>The header size is currently fixed at 20 bytes. The consuming application should read this field to determine how
+many bytes to skip before reading the data portion of the trace. In future releases of the API, the header size may
+change to incorporate new data, and legacy applications can safely skip over these fields if they are not understood.</p>
+</div>
+<div class="section" id="data">
+<h4>Data<a class="headerlink" href="#data" title="Permalink to this headline">¶</a></h4>
+<p>The data portion of the trace contains and array of 4 byte floats representing the received GPR amplitude in mV.
+The data points have already been normalized for stacks. The time between points is determined by the
+time_sampling_interval_ps in the <a class="reference internal" href="nic_setup.html#nic-setup-label"><span class="std std-ref">Setup</span></a> resource.</p>
+</div>
+</div>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+        <a href="gpr_system_info.html" class="btn btn-neutral float-right" title="System Information" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+        <a href="nic_acquisition.html" class="btn btn-neutral float-left" title="Acquisition" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &#169; Copyright Sensors &amp; Software Inc.
+
+    </p>
+  </div>
+    
+    
+    
+    Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    
+    provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>
